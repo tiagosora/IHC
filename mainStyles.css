@@ -14,9 +14,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     padding: 0;
 }
 
-.banana {
+.bottomSocials {
+    margin: 1%;
+}
+
+.navBarButton {
     height: 100%;
-    padding: 25px 8px;
+    padding: 25px 16px;
     place-content: center ;
     text-align: center;
 
