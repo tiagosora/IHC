@@ -1,3 +1,23 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
+
+.setGreen {
+    background-color: #295F44;
+}
+.setGray {
+    background-color: #E9E6E1;
+}
+.w3-button.teste {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+.banana {
+    height: 100%;
+    padding: 25px 8px;
+    place-content: center ;
+    text-align: center;
+
+}
