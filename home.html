@@ -8,9 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="mainStyles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
@@ -19,26 +19,30 @@
 <body>
 <div class="modal-box">
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog" role="document" style="margin: 20vh auto;">
       <div class="modal-content clearfix">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">X</button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="background: #2B475C;height: 35px; width: 35px;">X</button>
           <div class="modal-body">
-            <h3 class="title">Login In</h3>
-            <p class="description">Login here Using Email & Password</p>
+            <h3 class="title" style="color: #2B475C;">Login In</h3>
+            <p class="description">Sign in to access your acount</p>
             <div class="form-group">
-                <span class="input-icon"><i class="fa fa-user"></i></span>
-                <input type="email" class="form-control" placeholder="Enter email">
+                <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                <input type="email" class="form-control" placeholder="Email Account">
             </div>
             <div class="form-group">
-                <span class="input-icon"><i class="fas fa-key"></i></span>
+                <span class="input-icon"><i class="fas fa-lock"></i></span>
                 <input type="password" class="form-control" placeholder="Password">
             </div>
-            <div class="form-group checkbox">
-                <input type="checkbox">
-                <label>Remamber me</label>
+            <div>
+              <div class="form-group checkbox w3-left">
+                <input type="checkbox" class="double" style="margin: 0px; background-color: #2B475C; "><label style="color: #2B475C;">Remamber me</label>
+              </div>
+              <div class="w3-right">
+                <a href="" class="forgot-pass" style=" width: fit-content;  color: #2B475C;">Forgot Password?</a>
+              </div>
             </div>
-            <a href="" class="forgot-pass">Forgot Password?</a>
-            <button class="btn">Login</button>
+              <a href="#" class="forgot-pass" style="color: #2B475C;">Haven't become a member yet?</a>
+            <button class="btn" style=" margin-top: 15px; background: #2B475C;">Login</button>
           </div>
       </div>
     </div>
@@ -48,9 +52,9 @@
 
 
 <!-- Navbar -->
-<div class=" w3-top">
+<div class=" w3-top textColor1">
   <div class=" w3-bar setGray w3-card w3-left-align w3-large" style="height: 80px;">
-    <div class="navBarButton w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-large setGreen" style="margin-right: 20px;" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu">
+    <div class="navBarButton w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-large" style="margin-right: 20px;" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </div>
     <div href="#" class="navBarButton w3-bar-item  w3-small w3-large w3-hover-white" style="padding: 0; margin-left: 40px">
@@ -76,9 +80,9 @@
 
 <!-- Header -->
 <header class="w3-container setGreen w3-center" style="width: 100%; height: calc(100vh - 43px); content: center;margin-top: 43px;">
-  <div style="width: 100%; margin-top: calc(50vh - 140px);">
-    <h1 class="w3-margin" style="font-size: 15vh; letter-spacing: 2px;">UniForum</h1>
-    <p style="font-size: 7vh; margin-top: -30px;" ">study with us</p>
+  <div style="width: 100%; margin-top: calc(50vh - 140px); color: black;">
+    <h1 class="w3-margin" style="font-size: 15vh; letter-spacing: 5px; font-weight: 500;">UniForum</h1>
+    <p style="font-size: 7vh; margin-top: -30px; font-weight: 250;">study with us</p>
   </div>
   <!-- <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button> -->
 </header>
