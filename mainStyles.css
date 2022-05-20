@@ -218,6 +218,18 @@ header > .container > div:nth-child(2){
     padding: 0.01em 16px !important;
 }
 
+.main-bg{
+    background-position: 50% 50%;
+    background-image: url('img/bg2.jpg') !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media all and (max-width: 1441px){
+
+}
 
 @media all and (max-width:769px) {
     .w3-container, .w3-panel {
