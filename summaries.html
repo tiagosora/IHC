@@ -67,7 +67,7 @@
 <!-- Navbar -->
 <div class=" w3-top textColor1 fixed-top">
   <div class=" w3-bar setGray w3-card w3-left-align w3-large" style="height: 80px;">
-    <div class="navBarButton w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-large" style="margin-right: 20px;" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu">
+    <div class="navBarButton w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-large" style="margin-right: 20px;margin-top: 20px;" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </div>
     <div onclick="location.href='home.html';" class="navBarButton w3-bar-item  w3-small w3-large w3-button" style="padding: 0; margin-left: 40px">
@@ -112,10 +112,10 @@
 <header class="w3-container setGreen w3-center" style="width: 100%; height: calc(100vh - 80px); flex-direction: row;">
   <div class="container" style="max-width: 100%; width: 100%; height: calc(90vh - 80px); margin-top: 10vh; background-color: #2B475C; display: flex;
   flex-flow: row; content: center; margin-top: 80px;">
-    <div style="width: 24%; height: calc(90vh - 80px); background-color: #ccc; flex-flow: column;">
+    <div style="height: calc(90vh - 80px); background-color: #ccc; flex-flow: column;">
 
     </div>
-    <div style="width: 100%; height: calc(90vh - 80px); background-color: rgb(160, 26, 26);  flex-flow: 0 0 50%;">
+    <div style="height: calc(90vh - 80px); background-color: rgb(160, 26, 26);  flex-flow: 0 0 50%;">
 
     </div>
   </div>
@@ -140,7 +140,7 @@
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
       x.className += " w3-show";
-    } else { 
+    } else {
       x.className = x.className.replace(" w3-show", "");
     }
   }

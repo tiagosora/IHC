@@ -206,7 +206,30 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     background-color: #ccc!important;
 }
 
+header > .container > div:nth-child(1){
+    flex:0.35;
+}
 
+header > .container > div:nth-child(2){
+    flex:1;
+}
+
+.w3-container, .w3-panel {
+    padding: 0.01em 16px !important;
+}
+
+
+@media all and (max-width:769px) {
+    .w3-container, .w3-panel {
+        padding: 0px !important;
+    }
+
+    header > .container > div:nth-child(1){
+        flex:0.5;
+    }
+
+    
+}
 
 
 
