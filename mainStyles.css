@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
@@ -227,11 +229,27 @@ header > .container > div:nth-child(2){
     background-size: cover;
 }
 
+.main-txt{
+    color:rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
+}
+
+.main-txt:nth-child(1){
+    font-size: 13vh;
+    font-weight: 500;
+}
+
+.main-txt:nth-child(2){
+    font-size: 6.5vh;
+    font-weight:100;
+    margin-top: -5vh;
+}
+
 @media all and (max-width: 1441px){
 
 }
 
-@media all and (max-width:769px) {
+@media all and (max-width:768px) {
     .w3-container, .w3-panel {
         padding: 0px !important;
     }
@@ -240,10 +258,27 @@ header > .container > div:nth-child(2){
         flex:0.5;
     }
 
+    .main-txt:nth-child(1){
+        font-size: 11vh;
+    }
     
+    .main-txt:nth-child(2){
+        font-size: 5.5vh;
+    }
 }
 
+@media all and (max-width:480px){
+    .w3-container, .w3-panel {
+        padding: 0px !important;
+    }
 
-
-
+    .main-txt:nth-child(1){
+        font-size: 6vh;
+    }
+    
+    .main-txt:nth-child(2){
+        font-size: 3.5vh;
+        margin-top: -3vh;
+    }
+}
 
