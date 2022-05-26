@@ -18,6 +18,8 @@
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <link rel="stylesheet" href="mainStyles.css">
+  <script src="https://kit.fontawesome.com/272ebe4f5a.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -92,7 +94,7 @@
       </div>
       <div class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white"
         style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal">Login</div>
-      <div href="#" class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white"
+      <div onclick="location.href='Universities.html';" class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white"
         style="padding: 25px 16px;">Universities</div>
       <div onclick="location.href='summaries.html';"
         class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white" style="padding: 25px 16px;">
@@ -129,70 +131,155 @@
       </form>
     </div>
   </div> -->
+<button style="position: absolute; z-index:9999;" onclick="login(this)">logar</button> <!-- apagar -->
   <header class="w3-container setGray w3-center" style="width: 100%; height: calc(100vh - 80px); flex-direction: row;">
     <div class="container">
       <div class="filters-container" style="height: 100%; flex-flow: column;">
-        <span>Filters</span>
+        <h2 class="titles">FILTERS</h2>
         <form action="" class="filters-form">
           <div class="form-spacer">
             <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" class="input-field" placeholder="search">
           </div>
           <div class="form-spacer">
+            <i class="fa-solid fa-graduation-cap" style="padding-top: 7px;"></i>
             <select class="input-field" name="" id="">
               <option value="">Grade</option>
+              <option value="">10th</option>
+              <option value="">11th</option>
+              <option value="">12th</option>
             </select>
           </div>
           <div class="form-spacer">
+            <i class="fa-solid fa-book" style="padding-top: 7px;"></i>
             <select class="input-field" name="" id="">
               <option value="">Discipline</option>
+              <option value="">Math</option>
+              <option value="">Portuguese</option>
+              <option value="">Physics</option>
+              <option value="">Chemistry</option>
+              <option value="">Philosophy</option>
+              <option value="">English</option>
+              <option value="">French</option>
+              <option value="">Spanish</option>
             </select>
           </div>
           <div class="form-spacer">
-            <input class="input-field" type="date" name="" id="">
+            <input class="input-field" type="date" name="" id="" style="padding-left: 5px;">
           </div>
         </form>
       </div>
-      <div class="summaries-container" style="height: 100%;">
-        <h2>SUMMARIES</h2>
+      <div class="right-container" style="height: 100%;">
+        <h2 class="titles">SUMMARIES</h2>
         <div class="summaries-box">
           <div class="summarie">
-            <div class="summarie-icon">a</div>
-            <div class="summarie-desc">b</div>
-            <div class="summarie-star">c</div>
-          </div>
-          <div class="summarie">
-            <div class="summarie-icon">a</div>
-            <div class="summarie-desc">b</div>
-            <div class="summarie-star">c</div>
-          </div>
-          <div class="summarie">
-            <div class="summarie-icon">a</div>
-            <div class="summarie-desc">b</div>
-            <div class="summarie-star">c</div>
-          </div>
-          <div class="summarie">
-            <div class="summarie-icon">a</div>
-            <div class="summarie-desc">b</div>
-            <div class="summarie-star">c</div>
-          </div>
-          <div class="summarie">
-            <div class="summarie-icon">a</div>
-            <div class="summarie-desc">b</div>
-            <div class="summarie-star">c</div>
-          </div>
-          <div class="summarie">
-            <div class="summarie-icon">a</div>
-            <div class="summarie-desc">b</div>
-            <div class="summarie-star">c</div>
-          </div>
-          <div class="summarie">
-            <div class="summarie-icon">a</div>
-            <div class="summarie-desc">b</div>
-            <div class="summarie-star">c</div>
+            <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
+            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
+              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
+              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+            <script src="js/fav.js"></script>
           </div>
 
+          <div class="summarie">
+            <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
+            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
+              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
+              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+            <script src="js/fav.js"></script>
+          </div>
+          <div class="summarie">
+            <div class="summarie-icon"><i class="fa-solid fa-folder fa-2xl"></i></div>
+            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
+              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
+              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+            <script src="js/fav.js"></script>
+          </div>
+          <div class="summarie">
+            <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
+            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
+              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
+              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+            <script src="js/fav.js"></script>
+          </div>
+          <div class="summarie">
+            <div class="summarie-icon"><i class="fa-solid fa-folder fa-2xl"></i></div>
+            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
+              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
+              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+            <script src="js/fav.js"></script>
+          </div>
+          <div class="summarie">
+            <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
+            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
+              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
+              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+            <script src="js/fav.js"></script>
+          </div>
+          <div class="summarie">
+            <div class="summarie-icon"><i class="fa-solid fa-folder fa-2xl"></i></div>
+            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
+              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
+              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+            <script src="js/fav.js"></script>
+          </div>
+          <div class="summarie">
+            <div class="summarie-icon"><i class="fa-solid fa-folder fa-2xl"></i></div>
+            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
+              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
+              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+            <script src="js/fav.js"></script>
+          </div>
+          <div class="summarie">
+            <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
+            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
+              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
+              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+            <script src="js/fav.js"></script>
+          </div>
+          <div class="summarie">
+            <div class="summarie-icon"><i class="fa-solid fa-folder fa-2xl"></i></div>
+            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
+              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
+              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+            <script src="js/fav.js"></script>
+          </div>
+          <div class="summarie">
+            <div class="summarie-icon"><i class="fa-solid fa-folder fa-2xl"></i></div>
+            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
+              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
+              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+            <script src="js/fav.js"></script>
+          </div>
+          <div class="summarie">
+            <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
+            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
+              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
+              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+            <script src="js/fav.js"></script>
+          </div>
+          <div class="summarie">
+            <div class="summarie-icon"><i class="fa-solid fa-folder fa-2xl"></i></div>
+            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
+              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
+              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+            <script src="js/fav.js"></script>
+          </div>
+          
         </div>
+        
       </div>
     </div>
   </header>

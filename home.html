@@ -52,20 +52,33 @@
 
 
 <!-- Navbar -->
-<div class=" w3-top textColor1">
+<div class=" w3-top textColor1 fixed-top">
   <div class=" w3-bar setGray w3-card w3-left-align w3-large" style="height: 80px;">
-    <div class="navBarButton w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-large" style="margin-right: 20px;" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu">
+    <div class="navBarButton w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-large"
+      style="margin-right: 20px;margin-top: 20px;" href="javascript:void(0);" onclick="myFunction()"
+      title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </div>
-    <div onclick="location.href='home.html';" class="navBarButton w3-bar-item  w3-small w3-large w3-hover-white" style="padding: 0; margin-left: 40px">
-      <img src="logoCircle.png" alt="Logo"  class="w3-button maxSize" >
+    <div onclick="location.href='home.html';" class="navBarButton w3-bar-item  w3-small w3-large w3-button"
+      style="padding: 0; margin-left: 40px">
+      <div class="navBarButton w3-bar-item  w3-small w3-large maxSize" style="padding: 0;">
+        <img class="maxSize" src="logoCircle.png" alt="Logo">
+      </div>
+      <div class="navBarButton w3-button w3-small w3-large " style="margin-right: 40px; padding: 25px 16px;">UNIFORUM
+      </div>
     </div>
-    <!-- <div href="#" class="navBarButton w3-button w3-small w3-large w3-hover-white">UNIFORUM</div> -->
-    <div class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white" style="margin-right: 40px;" data-toggle="modal" data-target="#myModal">Login</div>
-    <div href="#" class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white">Universities</div>
-    <div onclick="location.href='summaries.html';" class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white">Summaries</div>
-    <div href="#" class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white">Forum</div>
-    <div onclick="location.href='home.html';" class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white">Home</div>
+    <div class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white"
+      style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal">Login</div>
+    <div onclick="location.href='Universities.html';" class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white"
+      style="padding: 25px 16px;">Universities</div>
+    <div onclick="location.href='summaries.html';"
+      class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white" style="padding: 25px 16px;">
+      Summaries</div>
+    <div href="#" class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white"
+      style="padding: 25px 16px;">Forum</div>
+    <div onclick="location.href='home.html';"
+      class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white" style="padding: 25px 16px;">Home
+    </div>
   </div>
 
   <!-- Navbar on small screens -->
@@ -77,6 +90,7 @@
     <a href="#" class="w3-bar-item w3-button w3-padding-large" style="text-align: center;">Link 4</a>
   </div>
 </div>
+
 
 <!-- Header -->
 <header class="w3-container setGreen w3-center main-bg" style="width: 100%; height: calc(100vh - 43px); content: center;margin-top: 43px;">
