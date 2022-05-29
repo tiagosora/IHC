@@ -94,8 +94,9 @@
       </div>
       <div class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white"
         style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal">Login</div>
-      <div onclick="location.href='Universities.html';" class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white"
-        style="padding: 25px 16px;">Universities</div>
+      <div onclick="location.href='Universities.html';"
+        class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white" style="padding: 25px 16px;">
+        Universities</div>
       <div onclick="location.href='summaries.html';"
         class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white" style="padding: 25px 16px;">
         Summaries</div>
@@ -131,11 +132,12 @@
       </form>
     </div>
   </div> -->
-<button style="position: absolute; z-index:9999;" onclick="login(this)">logar</button> <!-- apagar -->
-  <header class="w3-container setGray w3-center" style="width: 100%; height: calc(100vh - 80px); flex-direction: row;">
+  <button style="position: absolute; z-index:9999;" onclick="login(this)">logar</button> <!-- apagar -->
+  <header class="w3-container setGray w3-center"
+    style="width: 100%;min-width: fit-content;     height: calc(100vh - 2px); flex-direction: row;">
     <div class="container">
       <div class="filters-container" style="height: 100%; flex-flow: column;">
-        <h2 class="titles">FILTERS</h2>
+        <h2 class="titles"><i class="fa-solid fa-filter"></i> FILTERS</h2>
         <form action="" class="filters-form">
           <div class="form-spacer">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -157,20 +159,38 @@
         </form>
       </div>
       <div class="right-container" style="height: 100%;">
-        <h2 class="titles">UNIVERSITIES RANKING</h2>
+        <h2 class="titles"><i class="fa-solid fa-medal"></i> UNIVERSITIES RANKING</h2>
         <div class="universities-box">
           <div class="universitie">
             <div class="uni-rank">1</div>
-            <div class="uni-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint et fugit corporis pariatur saepe suscipit perspiciatis, eligendi qui aut! Ut quas ducimus vero repellendus explicabo magni nesciunt praesentium tenetur dolorum!</div>
+            <div class="uni-name">Universidade de Aveiro (UA)</div>
+            <a class="uni-link" onclick="window.open('https://www.ua.pt/', '_blank');">Visitar</a>
           </div>
+          <div class="universitie">
+            <div class="uni-rank">2</div>
+            <div class="uni-name">Universidade do Porto (UP)</div>
+            <a class="uni-link"
+              onclick="window.open('https://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=home', '_blank');">Visitar</a>
+          </div>
+          <div class="universitie">
+            <div class="uni-rank">3</div>
+            <div class="uni-name">Universidade da Beira Interior (UBI)</div>
+            <a class="uni-link" onclick="window.open('https://www.ubi.pt/', '_blank');">Visitar</a>
+          </div>
+          <div class="universitie">
+            <div class="uni-rank">4</div>
+            <div class="uni-name">Universidade Nova de Lisboa (UNL)</div>
+            <a class="uni-link" onclick="window.open('https://www.unl.pt/', '_blank');">Visitar</a>
+          </div>
+
         </div>
-        
+
       </div>
     </div>
   </header>
 
   <!-- Footer -->
-  <footer class="w3-bar w3-center w3-opacity setGray">
+  <!--<footer class="w3- w3-center setGray footer">
     <div class="w3-xlarge">
       <i class="bottomSocials fa fa-facebook-official w3-hover-opacity"></i>
       <i class="bottomSocials fa fa-instagram w3-hover-opacity"></i>
@@ -180,7 +200,22 @@
       <i class="bottomSocials fa fa-linkedin w3-hover-opacity"></i>
     </div>
     <p style="margin-top: 0;">The developers thank you for using UniForum</p>
-  </footer>
+  </footer>-->
+  <div class="footer-basic">
+    <footer>
+      <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+            class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a
+          href="#"><i class="icon ion-social-facebook"></i></a></div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Home</a></li>
+        <li class="list-inline-item"><a href="#">Services</a></li>
+        <li class="list-inline-item"><a href="#">About</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">Company Name © 2018</p>
+    </footer>
+  </div>
 
   <script>
     // Used to toggle the menu on small screens when clicking on the menu button
