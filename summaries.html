@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title> UniForum </title>
+  <title> UniForum - Summaries </title>
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="mainStyles.css">
   <script src="https://kit.fontawesome.com/272ebe4f5a.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -36,6 +35,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="mainStyles.css">
+
 
 </head>
 
@@ -78,9 +79,9 @@
 
   <!-- Navbar -->
   <div class=" w3-top textColor1 fixed-top">
-    <div class=" w3-bar setGray w3-card w3-left-align w3-large" style="height: 80px;">
+    <div class=" w3-bar setGray w3-card w3-left-align" style="height: 80px;">
       <div class="navBarButton w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-large"
-        style="margin-right: 20px;margin-top: 20px;" href="javascript:void(0);" onclick="myFunction()"
+        style="margin-right: 20px;margin-top: 3px;" href="javascript:void(0);" onclick="myFunction()"
         title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
       </div>
@@ -92,18 +93,19 @@
         <div class="navBarButton w3-button w3-small w3-large " style="margin-right: 40px; padding: 25px 16px;">UNIFORUM
         </div>
       </div>
-      <div class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white"
+      <div class="navBarButton w3-button w3-hide-small font-menu  w3- w3-right w3-hover-white"
         style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal">Login</div>
       <div onclick="location.href='Universities.html';"
-        class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white" style="padding: 25px 16px;">
+        class="navBarButton w3-button w3-hide-small font-menu  w3-right w3-hover-white" style="padding: 25px 16px;">
         Universities</div>
       <div onclick="location.href='summaries.html';"
-        class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white" style="padding: 25px 16px;">
+        class="navBarButton w3-button w3-hide-small font-menu  w3-right w3-hover-white" style="padding: 25px 16px;">
         Summaries</div>
-      <div href="#" class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white"
-        style="padding: 25px 16px;">Forum</div>
+      <div onclick="location.href='forum.html';" href="#"
+        class="navBarButton w3-button w3-hide-small font-menu w3-right w3-hover-white" style="padding: 25px 16px;">Forum
+      </div>
       <div onclick="location.href='home.html';"
-        class="navBarButton w3-button w3-hide-small w3-large w3-right w3-hover-white" style="padding: 25px 16px;">Home
+        class="navBarButton font-menu  w3-button w3-hide-small w3-right w3-hover-white" style="padding: 25px 16px;">Home
       </div>
     </div>
 
@@ -134,7 +136,7 @@
   </div> -->
   <button style="position: absolute; z-index:9999;" onclick="login(this)">logar</button> <!-- apagar -->
   <header class="w3-container setGray w3-center"
-    style="width: 100%;    height: calc(100vh - 2px); flex-direction: row;">
+    style="width: 100%; min-height: calc(100vh - 150px); flex-direction: row;">
     <div class="container">
       <div class="filters-container" style="height: 100%; flex-flow: column;">
         <h2 class="titles"><i class="fa-solid fa-filter"></i> FILTERS</h2>
@@ -287,18 +289,24 @@
   </header>
 
   <!-- Footer -->
-  <footer class="w3-bar w3-center w3-opacity setGray">
-    <div class="w3-xlarge">
-      <i class="bottomSocials fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="bottomSocials fa fa-instagram w3-hover-opacity"></i>
-      <i class="bottomSocials fa fa-snapchat w3-hover-opacity"></i>
-      <i class="bottomSocials fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="bottomSocials fa fa-twitter w3-hover-opacity"></i>
-      <i class="bottomSocials fa fa-linkedin w3-hover-opacity"></i>
-    </div>
-    <p style="margin-top: 0;">The developers thank you for using UniForum</p>
-  </footer>
-
+  <div class="footer-basic">
+    <footer>
+      <div class="social">
+        <a href="#"><i class="bottomSocials fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="#"><i class="bottomSocials fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="#"><i class="bottomSocials fa fa-snapchat w3-hover-opacity"></i></a>
+        <a href="#"><i class="bottomSocials fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="#"><i class="bottomSocials fa fa-linkedin w3-hover-opacity"></i></a>
+      </div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="./home.html">Home</a></li>
+        <li class="list-inline-item"><a href="./summaries.html">Summaries</a></li>
+        <li class="list-inline-item"><a href="./Universities.html">Universities</a></li>
+        <li class="list-inline-item"><a href="./forum.html">Forum</a></li>
+      </ul>
+      <p class="copyright">The developers thank you for using UniForum</p>
+    </footer>
+  </div>
   <script>
     // Used to toggle the menu on small screens when clicking on the menu button
     function myFunction() {
