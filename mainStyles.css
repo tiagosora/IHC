@@ -16,6 +16,71 @@ button {
     font-family: "Montserrat", sans-serif
 }
 
+/* ALERTAS MODAL E COISAS ASSIM */
+.oModal{
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding: 10px;
+    display: none;
+}
+
+.post{
+    display: none;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 10% auto;
+    color: black;
+    background-color: #cdcdcd;
+    border-radius: 5px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.post textarea{
+    border: none;
+    min-height: 100px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 0px 1px #000000;
+    box-shadow: 0px 2px 0px 1px #00000020;
+    outline: none;
+}
+
+.post button:nth-child(1){
+    background-color: rgb(239, 125, 125);
+    color: white;
+    float: right;
+    font-weight: bold;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.post-button{
+    background-color: rgb(239, 125, 125);
+    color: white;
+    float: right;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
 .fa-anchor,
 .fa-coffee {
     font-size: 200px
@@ -408,6 +473,15 @@ header>.container>div:nth-child(2) {
 .container-disc div i:nth-child(1):hover {
     color: #3a6940;
 }
+
+.container-holder {
+    display: flex;
+    flex-direction: column;
+    background-color: #026fd4;
+    height: 100%;
+}
+
+/* ------------ FIM ------------ */
 
 
 .filters-container {

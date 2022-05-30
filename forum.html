@@ -41,6 +41,49 @@
 </head>
 
 <body>
+    <div class="oModal" id="modalPost">
+        <div class="post" id="publicar">
+            <div>
+                <button onclick="closePost()" >X</button>
+            </div>
+            <h2>Starting a Discussion</h2>
+            <div class="form-spacer" style="margin-bottom: 10px;">
+                <i class="fa-brands fa-discourse"></i>
+                <input type="text" id="postTitle" class="input-field" placeholder="Discussion title">
+            </div>
+            <textarea id="postContent" placeholder="Write your discussion" type="text" id="post-text"></textarea>
+            <div class="form-spacer">
+                <i class="fa-solid fa-graduation-cap" style="padding-top: 7px;"></i>
+                <select class="input-field" name="" id="post-theme">
+                    <option value="">Theme</option>
+                    <option value="">Access to university Ed</option>
+                    <option value="">Courses</option>
+                    <option value="">Institutions</option>
+                </select>
+            </div>
+            <div class="form-spacer">
+                <i class="fa-solid fa-book" style="padding-top: 7px;"></i>
+                <select class="input-field" name="" id="post-subtheme">
+                    <option value="">Subtheme</option>
+                    <option value="">Medicine</option>
+                    <option value="">Education</option>
+                    <option value="">Engineering</option>
+                    <option value="">Science</option>
+                    <option value="">Humanities</option>
+                    <option value="">Architecture</option>
+                    <option value="">Arts</option>
+                </select>
+            </div>
+            <button onclick="getInfosPost()" class="post-button">Post</button>
+        </div>
+    </div>
+    <script>
+        function closePost(){
+            document.getElementById("modalPost").style.display = "none";
+            document.getElementById("publicar").style.display = "none";
+        }
+    </script>
+
     <div class="modal-box">
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document" style="margin: 20vh auto;">
@@ -70,7 +113,7 @@
                             </div>
                         </div>
                         <a href="#" class="forgot-pass" style="color: #2B475C;">Haven't become a member yet?</a>
-                        <button class="btn" style=" margin-top: 15px; background: #2B475C;">Login</button>
+                        <button class="btn" onclick="login(this)" style=" margin-top: 15px; background: #2B475C;">Login</button>
                     </div>
                 </div>
             </div>
@@ -97,7 +140,7 @@
                 </div>
             </div>
             <div class="navBarButton w3-button w3-hide-small font-menu  w3- w3-right w3-hover-white"
-                style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal">Login</div>
+                style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal" id="nav-login">Login</div>
             <div onclick="location.href='Universities.html';"
                 class="navBarButton w3-button w3-hide-small font-menu  w3-right w3-hover-white"
                 style="padding: 25px 16px;">
@@ -140,7 +183,6 @@
       </form>
     </div>
   </div> -->
-    <button style="position: absolute; z-index:9999;" onclick="login(this)">logar</button> <!-- apagar -->
     <header class="w3-container setGray w3-center"
         style="width: 100%; min-height: calc(100vh - 150px);   flex-direction: row;">
         <div class="container">
@@ -177,10 +219,25 @@
                         <input class="input-field" type="date" name="" id="" style="padding-left: 5px;">
                     </div>
                 </form>
+                <div id="criar">
+                    <button style="border: none; padding: 5px; border-radius: 5px; background-color: rgb(5, 175, 5); color:rgb(24, 75, 7);" class="titles" onclick="callModal()"><i class="fa-solid fa-feather"></i> START A DISCUSSION</button>
+                </div>
+                <script>
+                    function callModal(){
+                        document.getElementById("modalPost").style.display = "block";
+                        document.getElementById("publicar").style.display = "flex";
+                    }
+
+                    var elemento = document.getElementById("criar");
+                    console.log("checkando")
+                    if(parseInt(localStorage.getItem("login")) != 1){   
+                        elemento.remove();
+                    }
+                </script>
             </div>
             <div class="right-container" style="height: 100%;">
-                <h2 class="titles"><i class="fa-solid fa-comments"></i> FORUM</h2>
-                <div class="forum-box">
+                <h2 class="titles"  style="margin-left: 5px;"><i class="fa-solid fa-comments"></i> FORUM</h2>
+                <div class="forum-box" id="forum-box">
                     <div class="discussion" onclick="location.href='forum1.html';">
                         <div class="disc-avatar">
                             <img src="img/avatar1.jpg" alt="user avatar" srcset="">
@@ -225,6 +282,8 @@
 
             </div>
         </div>
+        <script src="js/main.js"></script>
+
     </header>
 
     <!-- Footer -->

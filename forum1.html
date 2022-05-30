@@ -40,42 +40,40 @@
 
 </head>
 
-<body>
+<body onload="checkLoginState()">
     <div class="modal-box">
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document" style="margin: 20vh auto;">
-                <div class="modal-content clearfix">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-                        style="background: #2B475C;height: 35px; width: 35px;">X</button>
-                    <div class="modal-body">
-                        <h3 class="title" style="color: #2B475C;">Login In</h3>
-                        <p class="description">Sign in to access your acount</p>
-                        <div class="form-group">
-                            <span class="input-icon"><i class="fa fa-envelope"></i></span>
-                            <input type="email" class="form-control" placeholder="Email Account">
-                        </div>
-                        <div class="form-group">
-                            <span class="input-icon"><i class="fas fa-lock"></i></span>
-                            <input type="password" class="form-control" placeholder="Password">
-                        </div>
-                        <div>
-                            <div class="form-group checkbox w3-left">
-                                <input type="checkbox" class="double"
-                                    style="margin: 0px; background-color: #2B475C; "><label
-                                    style="color: #2B475C;">Remamber me</label>
-                            </div>
-                            <div class="w3-right">
-                                <a href="" class="forgot-pass" style=" width: fit-content;  color: #2B475C;">Forgot
-                                    Password?</a>
-                            </div>
-                        </div>
-                        <a href="#" class="forgot-pass" style="color: #2B475C;">Haven't become a member yet?</a>
-                        <button class="btn" style=" margin-top: 15px; background: #2B475C;">Login</button>
-                    </div>
+          <div class="modal-dialog" role="document" style="margin: 20vh auto;">
+            <div class="modal-content clearfix">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                style="background: #2B475C;height: 35px; width: 35px;">X</button>
+              <div class="modal-body">
+                <h3 class="title"  style="color: #2B475C;">Login In</h3>
+                <p class="description">Sign in to access your acount</p>
+                <div class="form-group">
+                  <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                  <input type="email" class="form-control" placeholder="Email Account">
                 </div>
+                <div class="form-group">
+                  <span class="input-icon"><i class="fas fa-lock"></i></span>
+                  <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div>
+                  <div class="form-group checkbox w3-left">
+                    <input type="checkbox" class="double" style="margin: 0px; background-color: #2B475C; "><label
+                      style="color: #2B475C;">Remamber me</label>
+                  </div>
+                  <div class="w3-right">
+                    <a href="" class="forgot-pass" style=" width: fit-content;  color: #2B475C;">Forgot Password?</a>
+                  </div>
+                </div>
+                <a href="#" class="forgot-pass" style="color: #2B475C;">Haven't become a member yet?</a>
+                <button class="btn" onclick="login(this)" style=" margin-top: 15px; background: #2B475C;">Login</button>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
 
 
 
@@ -97,7 +95,7 @@
                 </div>
             </div>
             <div class="navBarButton w3-button w3-hide-small font-menu  w3- w3-right w3-hover-white"
-                style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal">Login</div>
+                style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal" id="nav-login">Login</div>
             <div onclick="location.href='Universities.html';"
                 class="navBarButton w3-button w3-hide-small font-menu  w3-right w3-hover-white"
                 style="padding: 25px 16px;">
@@ -141,15 +139,19 @@
       </form>
     </div>
   </div> -->
-    <button style="position: absolute; z-index:9999;" onclick="login(this)">logar</button> <!-- apagar -->
     <header class="w3-container setGray w3-center"
         style="width: 100%; min-height: calc(100vh - 150px); flex-direction: row;">
         <div class="container container-disc">
-            <div class="div"><i class="fa-solid fa-arrow-left-long fa-2x"></i></div>
+            <div onclick="location.href='forum.html'"><i class="fa-solid fa-arrow-left-long fa-2x"></i>
+            </div>
             <h2 class="titles"><i class="fa-solid fa-book-open"></i> Software Engineering at University of Aveiro</h2>
+            <div class="container-holder">
 
+            </div>
         </div>
         </div>
+        <script src="js/main.js"></script>
+
     </header>
 
     <!-- Footer -->

@@ -47,7 +47,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"
             style="background: #2B475C;height: 35px; width: 35px;">X</button>
           <div class="modal-body">
-            <h3 class="title" style="color: #2B475C;">Login In</h3>
+            <h3 class="title"  style="color: #2B475C;">Login In</h3>
             <p class="description">Sign in to access your acount</p>
             <div class="form-group">
               <span class="input-icon"><i class="fa fa-envelope"></i></span>
@@ -67,7 +67,7 @@
               </div>
             </div>
             <a href="#" class="forgot-pass" style="color: #2B475C;">Haven't become a member yet?</a>
-            <button class="btn" style=" margin-top: 15px; background: #2B475C;">Login</button>
+            <button class="btn" onclick="login(this)" style=" margin-top: 15px; background: #2B475C;">Login</button>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@
         </div>
       </div>
       <div class="navBarButton w3-button w3-hide-small font-menu  w3- w3-right w3-hover-white"
-        style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal">Login</div>
+        style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal" id="nav-login">Login</div>
       <div onclick="location.href='Universities.html';"
         class="navBarButton w3-button w3-hide-small font-menu  w3-right w3-hover-white" style="padding: 25px 16px;">
         Universities</div>
@@ -133,7 +133,6 @@
       </form>
     </div>
   </div> -->
-  <button style="position: absolute; z-index:9999;" onclick="login(this)">logar</button> <!-- apagar -->
   <header class="w3-container setGray w3-center"
     style="width: 100%;min-width: fit-content; min-height: calc(100vh - 150px);  flex-direction: row;">
     <div class="container">
@@ -188,6 +187,8 @@
 
       </div>
     </div>
+    <script src="js/main.js"></script>
+
   </header>
 
   <!-- Footer -->
