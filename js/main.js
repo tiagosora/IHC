@@ -72,7 +72,50 @@ async function getInfosPost(){
 
 function makeThePost(){
     var forum = document.getElementById("forum-box").innerHTML;
-    var adicionar = `<div class='discussion'><div class='disc-avatar'><img src='img/default.jpg' alt='user avatar' srcset=''>User</div><div class='disc-title'>${localStorage.getItem("postTitle")}</div><div class='disc-comments'><i class='fa-solid fa-comments'></i>0</div></div>`;
+    var adicionar = `<div onclick="location.href='discussion.html';" class='discussion'><div class='disc-avatar'><img src='img/default.jpg' alt='user avatar' srcset=''>User</div><div class='disc-title'>${localStorage.getItem("postTitle")}</div><div class='disc-comments'><i class='fa-solid fa-comments'></i>0</div></div>`;
     var refreshForum = adicionar + forum;
     document.getElementById("forum-box").innerHTML = refreshForum;
+}
+
+function premiumContentDisc(){
+    if(checkLogin() == true){
+        console.log("sucess");
+        location.href='forum1.html';
+    }else{
+        console.log("Not logged in");
+        document.getElementById("modalPost").style.display = "block";
+        document.getElementById("alert").style.display = "flex";
+    }
+}
+
+// FORUM FUNCTIONS
+var comentario;
+async function comment(){
+    var commentsBox = document.getElementById("comments").innerHTML;
+    comentario = document.getElementById("comentario").value;
+    console.log(comentario);
+
+    var holdHTML = `<div class='comentario'> <div class='user'> <div class='avatar img' style='background-image:url(img/default.jpg);'> </div> <div class='name' style='text-align:center;'><p style='font-size: medium;'>User</p></div> </div> <div class='conteudo'> <div class='conteudo-box'>${comentario}</div> </div>`; 
+    console.log(holdHTML);
+    var saveOriginal1 = document.getElementById("botaocomentar").style.backgroundColor;
+    var saveOriginal2 = document.getElementById("botaocomentar").style.color;
+    var saveOriginal3 = document.getElementById("botaocomentar").innerHTML;
+
+
+    document.getElementById("botaocomentar").style.backgroundColor= "rgb(187, 51, 187)";
+    document.getElementById("botaocomentar").style.color = "rgb(78, 3, 78)";
+    document.getElementById("botaocomentar").innerHTML = "Sending";
+
+    for(let i = 0; i < 3; i++){
+        await delay(400);
+        document.getElementById("botaocomentar").innerHTML+=". ";
+    }
+    await delay(500);
+
+    commentsBox = commentsBox + holdHTML;
+    document.getElementById("comments").innerHTML = commentsBox;
+    document.getElementById("comentario").value = "";
+    document.getElementById("botaocomentar").style.backgroundColor=saveOriginal1;
+    document.getElementById("botaocomentar").style.color = saveOriginal2;
+    document.getElementById("botaocomentar").innerHTML = saveOriginal3;
 }

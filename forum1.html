@@ -36,7 +36,7 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="mainStyles.css">
-
+    <link rel="stylesheet" href="forum.css">
 
 </head>
 
@@ -124,29 +124,55 @@
         </div>
     </div>
 
-    <!-- Header -->
-    <!-- <div class="row">
-    <div class="col-md-8 offset-md-2">
-      <form action="">
-        <div class="input-group">
-          <input type="search" class="form-control form-control-lg" placeholder="Type your keywords here">
-          <div class="input-group-append">
-            <button type="submit" class="btn btn-lg btn-default">
-            <i class="fa fa-search"></i>
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div> -->
     <header class="w3-container setGray w3-center"
         style="width: 100%; min-height: calc(100vh - 150px); flex-direction: row;">
         <div class="container container-disc">
-            <div onclick="location.href='forum.html'"><i class="fa-solid fa-arrow-left-long fa-2x"></i>
-            </div>
-            <h2 class="titles"><i class="fa-solid fa-book-open"></i> Software Engineering at University of Aveiro</h2>
-            <div class="container-holder">
-
+            <div style="padding: 0px 10px; margin-bottom: -15px;">
+              <div id="back" onclick="location.href='forum.html'"><i class="fa-solid fa-arrow-left-long fa-2x"></i>
+              </div>
+              <h2 class="titles"><i class="fa-solid fa-book-open"></i> Software Engineering at University of Aveiro</h2>
+              <h5>Discussion started at <b>02/06/2022</b></h5></div>
+              <div class="container-holder">
+              <div class="main-content">
+                <div class="user">
+                  <div class="avatar img">
+                  </div>
+                  <div class="name" style="text-align:center;"><p style="font-size: small;">Ana Rego</p></div>
+                </div>
+                <div class="disc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus provident velit labore numquam porro? Explicabo sapiente exercitationem eos dolores saepe. Alias commodi dignissimos enim quo quae inventore corrupti temporibus!</div>
+              </div>
+              <div class="answers">
+                <p>Answers <i class="fa-solid fa-arrow-turn-down"></i></p>
+              </div>
+              <div class="comments" id="comments">
+                <div class="comentario">
+                  <div class="user">
+                    <div class="avatar img">
+                    </div>
+                    <div class="name" style="text-align:center;"><p style="font-size: medium;">Ana Rego</p></div>
+                  </div>
+                  <div class="conteudo">
+                    <div class="conteudo-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam similique ex eveniet, laboriosam nulla culpa ea iste optio cumque possimus labore maxime, vitae qui quos illum, beatae necessitatibus consequuntur ipsum.</div>
+                  </div>
+                </div>
+                <div class="comentario">
+                  <div class="user">
+                    <div class="avatar img">
+                    </div>
+                    <div class="name" style="text-align:center;"><p style="font-size: medium;">Ana Rego</p></div>
+                  </div>
+                  <div class="conteudo">
+                    <div class="conteudo-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam similique ex eveniet, laboriosam nulla culpa ea iste optio cumque possimus labore maxime, vitae qui quos illum, beatae necessitatibus consequuntur ipsum.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="comentar-box">
+                <h4><i class="fa-solid fa-comment-dots"></i> Participate in the discussion:</h4>
+                <textarea name="" placeholder="Write here your comment" id="comentario"></textarea>
+                <div class="send-comment">
+                  <button onclick="comment()" id="botaocomentar"><i class="fa-solid fa-paper-plane"></i> Send comment</button>
+                </div>
+              </div>
             </div>
         </div>
         </div>

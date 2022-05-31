@@ -41,7 +41,14 @@
 </head>
 
 <body>
+<!-- MODAL PRINCIPAL DOS ALERTAS E CRIAÇÃO -->
     <div class="oModal" id="modalPost">
+        <div class="alert" id="alert">
+            <h2>Alert</h2>
+            <h4>You have to be logged in to access this content</h4>
+            <button onclick="closeAlert()" class="post-button">Ok</button>
+        </div>
+
         <div class="post" id="publicar">
             <div>
                 <button onclick="closePost()" >X</button>
@@ -81,6 +88,11 @@
         function closePost(){
             document.getElementById("modalPost").style.display = "none";
             document.getElementById("publicar").style.display = "none";
+        }
+
+        function closeAlert(){
+            document.getElementById("modalPost").style.display = "none";
+            document.getElementById("alert").style.display = "none";
         }
     </script>
 
@@ -220,7 +232,7 @@
                     </div>
                 </form>
                 <div id="criar">
-                    <button style="border: none; padding: 5px; border-radius: 5px; background-color: rgb(5, 175, 5); color:rgb(24, 75, 7);" class="titles" onclick="callModal()"><i class="fa-solid fa-feather"></i> START A DISCUSSION</button>
+                    <button  class="animacao titles" onclick="callModal()"><i class="fa-solid fa-feather"></i> START A DISCUSSION</button>
                 </div>
                 <script>
                     function callModal(){
@@ -238,7 +250,7 @@
             <div class="right-container" style="height: 100%;">
                 <h2 class="titles"  style="margin-left: 5px;"><i class="fa-solid fa-comments"></i> FORUM</h2>
                 <div class="forum-box" id="forum-box">
-                    <div class="discussion" onclick="location.href='forum1.html';">
+                    <div class="discussion" onclick="premiumContentDisc()">
                         <div class="disc-avatar">
                             <img src="img/avatar1.jpg" alt="user avatar" srcset="">
                             Ana Rego
@@ -246,7 +258,7 @@
                         <div class="disc-title">Lorem, ipsum dolorsit amet consectetu sit </div>
                         <div class="disc-comments"><i class="fa-solid fa-comments"></i>12</div>
                     </div>
-                    <div class="discussion">
+                    <div class="discussion" onclick="premiumContentDisc()">
                         <div class="disc-avatar">
                             <img src="img/avatar1.jpg" alt="user avatar" srcset="">
                             Ana Rego
@@ -254,7 +266,7 @@
                         <div class="disc-title">Lorem, ipsum dolorsit amet consectetu sit </div>
                         <div class="disc-comments"><i class="fa-solid fa-comments"></i>12</div>
                     </div>
-                    <div class="discussion">
+                    <div class="discussion" onclick="premiumContentDisc()">
                         <div class="disc-avatar">
                             <img src="img/avatar1.jpg" alt="user avatar" srcset="">
                             Ana Rego
@@ -262,15 +274,7 @@
                         <div class="disc-title">Lorem, ipsum dolorsit amet consectetu sit </div>
                         <div class="disc-comments"><i class="fa-solid fa-comments"></i>12</div>
                     </div>
-                    <div class="discussion">
-                        <div class="disc-avatar">
-                            <img src="img/avatar1.jpg" alt="user avatar" srcset="">
-                            Ana Rego
-                        </div>
-                        <div class="disc-title">Lorem, ipsum dolorsit amet consectetu sit </div>
-                        <div class="disc-comments"><i class="fa-solid fa-comments"></i>12</div>
-                    </div>
-                    <div class="discussion">
+                    <div class="discussion" onclick="premiumContentDisc()">
                         <div class="disc-avatar">
                             <img src="img/avatar1.jpg" alt="user avatar" srcset="">
                             Ana Rego
@@ -279,7 +283,6 @@
                         <div class="disc-comments"><i class="fa-solid fa-comments"></i>12</div>
                     </div>
                 </div>
-
             </div>
         </div>
         <script src="js/main.js"></script>

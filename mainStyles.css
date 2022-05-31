@@ -31,8 +31,7 @@ button {
     display: none;
 }
 
-.post{
-    display: none;
+.alert{
     text-align: center;
     width: 100%;
     max-width: 500px;
@@ -45,6 +44,23 @@ button {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    display: none;
+}
+
+.post{
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 10% auto;
+    color: black;
+    background-color: #cdcdcd;
+    border-radius: 5px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    display: none;
 }
 
 .post textarea{
@@ -208,6 +224,21 @@ button {
 
 .modal-body {
     padding: 60px 40px 40px !important;
+}
+
+.animacao{
+    border: none; 
+    border-radius: 5px; 
+    background-color: rgb(40, 213, 40);
+    padding: 8px 15px;
+    color: rgb(3, 88, 3);
+    border-radius: 5px;
+}
+
+.animacao:hover{
+    transition: 0.15s all;
+    background-color: rgb(224, 184, 21);
+    color: rgb(88, 75, 3);
 }
 
 .modal-body .title {
@@ -467,19 +498,8 @@ header>.container>div:nth-child(2) {
     margin: 100px auto;
     display: flex;
     flex-direction: column;
-    cursor: pointer;
 }
 
-.container-disc div i:nth-child(1):hover {
-    color: #3a6940;
-}
-
-.container-holder {
-    display: flex;
-    flex-direction: column;
-    background-color: #026fd4;
-    height: 100%;
-}
 
 /* ------------ FIM ------------ */
 
