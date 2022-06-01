@@ -9,7 +9,7 @@ if(parseInt(localStorage.getItem("login")) === 1){
 
 function changeNav(){
     var elemento = document.getElementById("nav-login");
-    elemento.remove();
+    elemento.innerHTML = '<i class="fa-solid fa-circle-user"></i>'
 }
 
 function checkLogin(){
@@ -30,6 +30,7 @@ async function login(element){
     isLogged = true
     localStorage.setItem("login", 1);
     loginAnime(element);
+
 }
 
 async function loginAnime(element){
@@ -43,6 +44,7 @@ async function loginAnime(element){
     element.innerText = "Sessão iniciada";
     await delay(1000);
     location.reload();
+
 }
 
 function fav(element){
