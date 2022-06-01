@@ -8,8 +8,18 @@ if(parseInt(localStorage.getItem("login")) === 1){
 }
 
 function changeNav(){
-    var elemento = document.getElementById("nav-login");
-    elemento.innerHTML = '<i class="fa-solid fa-circle-user"></i>'
+    // var elemento = document.getElementById("nav-login");
+    // elemento.remove();
+    // var login = document.getElementById("main-nav-bar").innerHTML;
+    // var colar = `<div class='navBarButton w3-button w3-hide-small font-menu  w3- w3-right w3-hover-white' style='margin-right: 40px; padding: 25px 16px' id="nav-login"><i class="fa-solid fa-circle-user"></i>'</div>`
+    // document.getElementById("main-nav-bar").innerHTML = login + colar;
+    // const originalString = document.getElementById("main-nav-bar").innerHTML;
+
+    // const strippedString = originalString.replace('data-toggle="modal"', "");
+    // console.log(strippedString)
+    // const strippedString2 = originalString.replace('data-target="#myModalx1"', "");
+    document.getElementById("nav-login").removeAttribute("data-target")
+    document.getElementById("nav-login").innerHTML = '<i class="fa-solid fa-circle-user"></i>'
 }
 
 function checkLogin(){
@@ -73,6 +83,7 @@ async function getInfosPost(){
 }
 
 function makeThePost(){
+
     var forum = document.getElementById("forum-box").innerHTML;
     var adicionar = `<div onclick="location.href='discussion.html';" class='discussion'><div class='disc-avatar'><img src='img/default.jpg' alt='user avatar' srcset=''>User</div><div class='disc-title'>${localStorage.getItem("postTitle")}</div><div class='disc-comments'><i class='fa-solid fa-comments'></i>0</div></div>`;
     var refreshForum = adicionar + forum;
