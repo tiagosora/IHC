@@ -93,7 +93,7 @@ function makeThePost(){
 function premiumContentDisc(){
     if(checkLogin() == true){
         console.log("sucess");
-        fav()
+        location.href='forum1.html';
     }else{
         console.log("Not logged in");
         document.getElementById("modalPost").style.display = "block";
@@ -104,6 +104,7 @@ function premiumContentDisc(){
 function premiumContentSum(){
     if(checkLogin() == true){
         console.log("sucess");
+        fav()
     }else{
         console.log("Not logged in");
         document.getElementById("modalPost").style.display = "block";
