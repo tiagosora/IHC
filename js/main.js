@@ -93,7 +93,17 @@ function makeThePost(){
 function premiumContentDisc(){
     if(checkLogin() == true){
         console.log("sucess");
-        location.href='forum1.html';
+        fav()
+    }else{
+        console.log("Not logged in");
+        document.getElementById("modalPost").style.display = "block";
+        document.getElementById("alert").style.display = "flex";
+    }
+}
+
+function premiumContentSum(){
+    if(checkLogin() == true){
+        console.log("sucess");
     }else{
         console.log("Not logged in");
         document.getElementById("modalPost").style.display = "block";
