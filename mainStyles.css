@@ -447,7 +447,7 @@ header>.container>div:nth-child(2) {
 
 .main-bg {
     background-position: 50% 50%;
-    background-image: url('img/bg2.jpg') !important;
+    background-image: url('img/bg3.jpg') !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -717,8 +717,8 @@ a:active {
 
 /* footer */
 .footer-basic {
-    padding: 20px 0;
-    background-color: #ffffff;
+    padding: 12px 0;
+    background-color: #E9E6E1;
     color: #4b4c4d;
 }
 
@@ -747,14 +747,14 @@ a:active {
 
 .footer-basic .social {
     text-align: center;
-    padding-bottom: 25px;
+    /* padding-bottom: 10px; */
 }
 
 .footer-basic .social>a {
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     display: inline-block;
     text-align: center;
     border-radius: 50%;
@@ -769,7 +769,7 @@ a:active {
 }
 
 .footer-basic .copyright {
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: center;
     font-size: 13px;
     color: #aaa;
