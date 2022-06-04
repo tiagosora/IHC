@@ -685,16 +685,15 @@ a:active {
 }
 
 .font-menu {
-    margin-top: 2px;
     font-size: 18px;
 }
 
 @media all and (max-width:1200px) {
 
-    .font-menu {
-        margin-top: 5px;
+    /* .font-menu {
+        padding-top: 30px !important;
         font-size: medium;
-    }
+    } */
 
     .right-container {
         padding-left: 10px;
@@ -777,16 +776,16 @@ a:active {
 }
 
 @media all and (max-width:850px) {
-    .font-menu {
+    /* .font-menu {
         font-size: smaller;
-    }
+    } */
 }
 
 @media all and (max-width:768px) {
 
-    .font-menu {
+    /* .font-menu {
         font-size: 10px;
-    }
+    } */
 
     .filters-container {
         padding: 10px !important;

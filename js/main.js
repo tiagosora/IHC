@@ -19,7 +19,7 @@ function changeNav(){
     // console.log(strippedString)
     // const strippedString2 = originalString.replace('data-target="#myModalx1"', "");
     document.getElementById("nav-login").removeAttribute("data-target")
-    document.getElementById("nav-login").innerHTML = '<i class="fa-solid fa-circle-user"></i>'
+    document.getElementById("nav-login").innerHTML = '<i class="fa-solid fa-circle-user" style="font-size: 30px;"></i>'
 }
 
 function checkLogin(){
@@ -50,7 +50,7 @@ async function loginAnime(element){
         await delay(500);
     }
     await delay(1000);
-    element.style.backgroundColor = "green";
+    element.style.backgroundColor = "#2B475C";
     element.innerText = "Sessão iniciada";
     await delay(1000);
     location.reload();
