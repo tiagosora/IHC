@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title> UniForum - Profile </title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mainStyles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/272ebe4f5a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/dist/css/adminlte.min.css?v=3.2.0">
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mainStyles.css">
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <div class=" w3-top textColor1 fixed-top" id="main-nav-bar">
+            <div class=" w3-bar setGray w3-card w3-left-align" style="height: 80px;">
+                <div class="navBarButton w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-large"
+                  style="margin-right: 20px;margin-top: 3px;" href="javascript:void(0);" onclick="myFunction()"
+                  title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div onclick="location.href='home.html';" class="navBarButton w3-bar-item  w3-small w3-large"
+                  style="padding: 0; margin-left: 40px">
+                    <div class="navBarButton w3-bar-item  w3-small w3-large maxSize" style="padding: 0;">
+                        <img class="maxSize" src="logoImage.png" alt="Logo">
+                    </div>
+                    <div class="navBarButton w3-button w3-small w3-large " style="margin-right: 40px; padding: 25px 16px;">UniForum
+                    </div>
+                </div>
+                <div class="navBarButton w3-button w3-hide-small font-menu  w3- w3-right w3-hover-white"
+                  style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal" id="nav-login">Login</div>
+                <div onclick="location.href='Universities.html';"
+                  class="navBarButton w3-button w3-hide-small font-menu  w3-right w3-hover-white" style="padding: 25px 16px;">
+                  Universities</div> 
+                <div onclick="location.href='summaries.html';"
+                  class="navBarButton w3-button w3-hide-small font-menu  w3-right w3-hover-white" style="padding: 25px 16px;">
+                  Summaries</div>
+                <div onclick="location.href='forum.html';" href="#"
+                  class="navBarButton w3-button w3-hide-small font-menu w3-right w3-hover-white" style="padding: 25px 16px;">Forum
+                </div>
+            </div>
+          
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a href="forum.html" class="w3-bar-item w3-button w3-padding-large" style="text-align: center;">Forum</a>
+                <a href="summaries.html" class="w3-bar-item w3-button w3-padding-large" style="text-align: center;">Summaries</a>
+                <a href="Universities.html" class="w3-bar-item w3-button w3-padding-large" style="text-align: center;">Universities</a>
+            </div>
+        </div>
+
+        <header class="w3-container setGray w3-center"
+        style="width: 100%; height: calc(100vh - 83px); flex-direction: row;">
+            <div class="container-holder">
+                <div class="main-content">
+                    <div class="user">
+                        <div class="avatar img">
+                        </div>
+                        <div class="name" style="text-align:center;"><p style="font-size: small;">Ana Rego</p></div>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+
+        <!-- Footer -->
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="#"><i class="bottomSocials fa fa-facebook-official w3-hover-opacity"></i></a>
+                    <a href="#"><i class="bottomSocials fa fa-instagram w3-hover-opacity"></i></a>
+                    <a href="#"><i class="bottomSocials fa fa-snapchat w3-hover-opacity"></i></a>
+                    <a href="#"><i class="bottomSocials fa fa-twitter w3-hover-opacity"></i></a>
+                    <a href="#"><i class="bottomSocials fa fa-linkedin w3-hover-opacity"></i></a>
+                </div>
+                <p class="copyright">The developers thank you for using UniForum</p>
+            </footer>
+        </div>
+        <script>
+          // Used to toggle the menu on small screens when clicking on the menu button
+            function myFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+          crossorigin="anonymous"></script>
+    </body>
+</html>
