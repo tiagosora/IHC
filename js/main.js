@@ -101,6 +101,17 @@ function premiumContentDisc(){
     }
 }
 
+function premiumContentSum(){
+    if(checkLogin() == true){
+        console.log("sucess");
+        fav()
+    }else{
+        console.log("Not logged in");
+        document.getElementById("modalPost").style.display = "block";
+        document.getElementById("alert").style.display = "flex";
+    }
+}
+
 // FORUM FUNCTIONS
 var comentario;
 async function comment(){
