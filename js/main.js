@@ -8,16 +8,6 @@ if(parseInt(localStorage.getItem("login")) === 1){
 }
 
 function changeNav(){
-    // var elemento = document.getElementById("nav-login");
-    // elemento.remove();
-    // var login = document.getElementById("main-nav-bar").innerHTML;
-    // var colar = `<div class='navBarButton w3-button w3-hide-small font-menu  w3- w3-right w3-hover-white' style='margin-right: 40px; padding: 25px 16px' id="nav-login"><i class="fa-solid fa-circle-user"></i>'</div>`
-    // document.getElementById("main-nav-bar").innerHTML = login + colar;
-    // const originalString = document.getElementById("main-nav-bar").innerHTML;
-
-    // const strippedString = originalString.replace('data-toggle="modal"', "");
-    // console.log(strippedString)
-    // const strippedString2 = originalString.replace('data-target="#myModalx1"', "");
     document.getElementById("nav-login").removeAttribute("data-target")
     document.getElementById("nav-login").setAttribute("onclick","location.href='perfil.html';")
     document.getElementById("nav-login").innerHTML = '<i class="fa-solid fa-circle-user" style="font-size: 30px;"></i>'
@@ -144,4 +134,14 @@ async function comment(){
     document.getElementById("botaocomentar").style.backgroundColor=saveOriginal1;
     document.getElementById("botaocomentar").style.color = saveOriginal2;
     document.getElementById("botaocomentar").innerHTML = saveOriginal3;
+}
+
+function summarieUpdate(){
+    var selected_option = document.getElementById("grade").value
+    var selected_option2 = document.getElementById("discipline").value
+    if (selected_option != ""){
+        document.getElementById("summaries_name").innerHTML = '<i class="fa-solid fa-book-open"></i>' + ' ' +  selected_option + ' GRADE ' +  selected_option2 + ' SUMMARIES'
+    }else{
+        document.getElementById("summaries_name").innerHTML = '<i class="fa-solid fa-book-open"></i>' + ' ' +  selected_option2 + ' SUMMARIES'
+    }
 }
