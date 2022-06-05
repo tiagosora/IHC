@@ -471,7 +471,6 @@ header>.container>div:nth-child(2) {
 }
 
 .container {
-    max-width: 1200px;
     width: 100%;
     margin-top: 11vh;
     background-color: #2b475c00;
@@ -493,7 +492,6 @@ header>.container>div:nth-child(2) {
 
 /* CONTAINER DO FORUM DISCUSSAO */
 .container-disc {
-    max-width: 1200px;
     width: 100%;
     margin: 100px auto;
     display: flex;
@@ -596,11 +594,12 @@ header>.container>div:nth-child(2) {
 
 .summarie .summarie-star {
     width: 12%;
-    padding-top: 10px;
     padding-right: 15px;
     height: 100%;
     box-sizing: border-box;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 /* UNIVERSITIES */
@@ -854,3 +853,35 @@ a:active {
 
 
 }
+
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #e6d6bb;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }

@@ -169,21 +169,6 @@
         </div>
     </div>
 
-    <!-- Header -->
-    <!-- <div class="row">
-    <div class="col-md-8 offset-md-2">
-      <form action="">
-        <div class="input-group">
-          <input type="search" class="form-control form-control-lg" placeholder="Type your keywords here">
-          <div class="input-group-append">
-            <button type="submit" class="btn btn-lg btn-default">
-            <i class="fa fa-search"></i>
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div> -->
     <header class="w3-container setGray w3-center"
         style="width: 100%; height: calc(100vh - 83px); flex-direction: row;">
         <div class="container">
@@ -221,20 +206,8 @@
                     </div>
                 </form>
                 <div id="criar">
-                    <button  class="animacao titles" onclick="callModal()"><i class="fa-solid fa-feather"></i> START A DISCUSSION</button>
+                    <button  class="animacao titles" onclick="premiumContentCreatDisc()"><i class="fa-solid fa-feather"></i> START A DISCUSSION</button>
                 </div>
-                <script>
-                    function callModal(){
-                        document.getElementById("modalPost").style.display = "block";
-                        document.getElementById("publicar").style.display = "flex";
-                    }
-
-                    var elemento = document.getElementById("criar");
-                    console.log("checkando")
-                    if(parseInt(localStorage.getItem("login")) != 1){   
-                        elemento.remove();
-                    }
-                </script>
             </div>
             <div class="right-container" style="height: 100%;">
                 <h2 class="titles"  style="margin-left: 5px;"><i class="fa-solid fa-comments"></i> FORUM</h2>

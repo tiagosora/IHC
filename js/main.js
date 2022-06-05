@@ -10,6 +10,7 @@ if(parseInt(localStorage.getItem("login")) === 1){
 function changeNav(){
     document.getElementById("nav-login").removeAttribute("data-target")
     document.getElementById("nav-login").innerHTML = '<i class="fa-solid fa-circle-user" style="font-size: 30px;"></i>'
+    document.getElementById("nav-login").setAttribute("onclick", "window.location = 'perfil.html'")
 }
 
 function checkLogin(){
@@ -89,6 +90,22 @@ function premiumContentDisc(){
         document.getElementById("modalPost").style.display = "block";
         document.getElementById("alert").style.display = "flex";
     }
+}
+
+function premiumContentCreatDisc(){
+    if(checkLogin() == true){
+        console.log("sucess");
+        callModal();
+    }else{
+        console.log("Not logged in");
+        document.getElementById("modalPost").style.display = "block";
+        document.getElementById("alert").style.display = "flex";
+    }
+}
+
+function callModal(){
+    document.getElementById("modalPost").style.display = "block";
+    document.getElementById("publicar").style.display = "flex";
 }
 
 function premiumContentSum(){
