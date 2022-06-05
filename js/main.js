@@ -9,6 +9,7 @@ if(parseInt(localStorage.getItem("login")) === 1){
 
 function changeNav(){
     document.getElementById("nav-login").removeAttribute("data-target")
+    document.getElementById("nav-login").setAttribute("onclick","location.href='perfil.html';")
     document.getElementById("nav-login").innerHTML = '<i class="fa-solid fa-circle-user" style="font-size: 30px;"></i>'
     document.getElementById("nav-login").setAttribute("onclick", "window.location = 'perfil.html'")
 }
