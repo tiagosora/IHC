@@ -139,15 +139,15 @@
           </div>
           <div class="form-spacer">
             <i class="fa-solid fa-square-poll-vertical" style="padding-top: 6px;"></i>
-            <select class="input-field" name="" id="">
-              <option value="">Area</option>
-              <option value="">Medicine</option>
-              <option value="">Education</option>
-              <option value="">Engineering</option>
-              <option value="">Science</option>
-              <option value="">Humanities</option>
-              <option value="">Architecture</option>
-              <option value="">Arts</option>
+            <select class="input-field" name="" id="area" onchange="universitiesUpdate()">
+              <option value="" selected>Area</option>
+              <option value="Medicine">Medicine</option>
+              <option value="Education">Education</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Science">Science</option>
+              <option value="Humanities">Humanities</option>
+              <option value="Architecture">Architecture</option>
+              <option value="Arts">Arts</option>
             </select>
           </div>
         </form>
@@ -155,26 +155,56 @@
       <div class="right-container" style="height: 100%;">
         <h2 class="titles"><i class="fa-solid fa-medal"></i> UNIVERSITIES RANKING</h2>
         <div class="universities-box">
-          <div class="universitie">
+          <div id="university1" class="universitie">
             <div class="uni-rank">1</div>
-            <div class="uni-name">Universidade de Aveiro (UA)</div>
-            <a class="uni-link" onclick="window.open('https://www.ua.pt/', '_blank');">Visitar</a>
+            <div id="uni1" class="uni-name">Universidade de Lisboa : Engineering</div>
+            <a id="uni1link" class="uni-link" onclick="window.open('https://www.ua.pt/', '_blank');">Visitar</a>
           </div>
-          <div class="universitie">
+          <div id="university2" class="universitie">
             <div class="uni-rank">2</div>
-            <div class="uni-name">Universidade do Porto (UP)</div>
-            <a class="uni-link"
+            <div id="uni2" class="uni-name">Universidade do Porto : Medicine</div>
+            <a id="uni2link" class="uni-link"
               onclick="window.open('https://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=home', '_blank');">Visitar</a>
           </div>
-          <div class="universitie">
+          <div id="university3" class="universitie">
             <div class="uni-rank">3</div>
-            <div class="uni-name">Universidade da Beira Interior (UBI)</div>
-            <a class="uni-link" onclick="window.open('https://www.ubi.pt/', '_blank');">Visitar</a>
+            <div id="uni3" class="uni-name">Universidade do Porto : Engineering</div>
+            <a id="uni3link" class="uni-link" onclick="window.open('https://www.ubi.pt/', '_blank');">Visitar</a>
           </div>
-          <div class="universitie">
+          <div id="university4" class="universitie">
             <div class="uni-rank">4</div>
-            <div class="uni-name">Universidade Nova de Lisboa (UNL)</div>
-            <a class="uni-link" onclick="window.open('https://www.unl.pt/', '_blank');">Visitar</a>
+            <div id="uni4" class="uni-name">Universidade do Minho : Medicine</div>
+            <a id="uni4link" class="uni-link" onclick="window.open('https://www.unl.pt/', '_blank');">Visitar</a>
+          </div>
+          <div id="university5" class="universitie">
+            <div class="uni-rank">5</div>
+            <div id="uni5" class="uni-name">Universidade de Aveiro : Engineering</div>
+            <a id="uni5link" class="uni-link" onclick="window.open('https://www.unl.pt/', '_blank');">Visitar</a>
+          </div>
+          <div id="university6" class="universitie">
+            <div class="uni-rank">6</div>
+            <div id="uni6" class="uni-name">Universidade do Porto : Humanities</div>
+            <a id="uni6link" class="uni-link" onclick="window.open('https://www.unl.pt/', '_blank');">Visitar</a>
+          </div>
+          <div id="university7" class="universitie">
+            <div class="uni-rank">7</div>
+            <div id="uni7" class="uni-name">Universidade de Coimbra : Medicine</div>
+            <a id="uni7link" class="uni-link" onclick="window.open('https://www.unl.pt/', '_blank');">Visitar</a>
+          </div>
+          <div id="university8" class="universitie">
+            <div class="uni-rank">8</div>
+            <div id="uni8" class="uni-name">Universidade Nova de Lisboa : Medicine</div>
+            <a id="uni8link" class="uni-link" onclick="window.open('https://www.unl.pt/', '_blank');">Visitar</a>
+          </div>
+          <div id="university9" class="universitie">
+            <div class="uni-rank">9</div>
+            <div id="uni9" class="uni-name">Universidade de Lisboa : Science</div>
+            <a id="uni9link" class="uni-link" onclick="window.open('https://www.unl.pt/', '_blank');">Visitar</a>
+          </div>
+          <div id="university10" class="universitie">
+            <div class="uni-rank">10</div>
+            <div id="uni10" class="uni-name">Universidade do Porto - Architecture</div>
+            <a id="uni10link" class="uni-link" onclick="window.open('https://www.unl.pt/', '_blank');">Visitar</a>
           </div>
 
         </div>
