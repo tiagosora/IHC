@@ -62,6 +62,28 @@ function fav(element){
     }
 }
 
+function remove_element(element){
+    document.getElementById("modalPost").style.display = "block";
+    document.getElementById("alert").style.display = "flex";
+    globalThis.toErase = element; 
+}
+
+async function Wanna_remove(){
+
+    var back_up = document.getElementById("ok_remove").innerHTML;
+    document.getElementById("ok_remove").innerHTML = "Erasing";
+    for(let i = 0; i < 3; i++){
+
+        await delay(400);
+        document.getElementById("ok_remove").innerHTML+=". ";
+    }
+    await delay(500);
+    document.getElementById("modalPost").style.display = "none";
+    document.getElementById("alert").style.display = "none";
+    toErase.remove();
+    document.getElementById("ok_remove").innerHTML = back_up;
+}
+
 async function getInfosPost(){
     var postTitle = document.getElementById("postTitle");
     var postContent = document.getElementById("postContent");
@@ -113,6 +135,16 @@ function premiumContentSum(){
     if(checkLogin() == true){
         console.log("sucess");
         fav()
+    }else{
+        console.log("Not logged in");
+        document.getElementById("modalPost").style.display = "block";
+        document.getElementById("alert").style.display = "flex";
+    }
+}
+
+function premiumContentPerf(){
+    if(checkLogin() == true){
+        console.log("sucess");
     }else{
         console.log("Not logged in");
         document.getElementById("modalPost").style.display = "block";

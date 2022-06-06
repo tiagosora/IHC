@@ -49,9 +49,9 @@
     </div>
   </div>
   <script>
-    function closeAlert(){
-        document.getElementById("modalPost").style.display = "none";
-        document.getElementById("alert").style.display = "none";
+    function closeAlert() {
+      document.getElementById("modalPost").style.display = "none";
+      document.getElementById("alert").style.display = "none";
     }
   </script>
   <div class="modal-box">
@@ -59,9 +59,9 @@
       <div class="modal-dialog" role="document" style="margin: 20vh auto;">
         <div class="modal-content clearfix">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-            style="background: #2B475C;height: 35px; width: 35px;">X</button>
+            style="background: #e8d1a9;font-weight: bold;height: 35px; width: 35px;">X</button>
           <div class="modal-body">
-            <h3 class="title"  style="color: #2B475C;">Login In</h3>
+            <h3 class="title" style="color: #e8d1a9;font-weight: bold;">Login In</h3>
             <p class="description">Sign in to access your acount</p>
             <div class="form-group">
               <span class="input-icon"><i class="fa fa-envelope"></i></span>
@@ -81,7 +81,8 @@
               </div>
             </div>
             <a href="#" class="forgot-pass" style="color: #2B475C;">Haven't become a member yet?</a>
-            <button class="btn" onclick="login(this)" style=" margin-top: 15px; background: #2B475C;">Login</button>
+            <button class="btn" onclick="login(this)"
+              style=" margin-top: 15px; background: #e8d1a9;font-weight: bold;">Login</button>
           </div>
         </div>
       </div>
@@ -107,10 +108,11 @@
         </div>
       </div>
       <div class="navBarButton w3-button w3-hide-small font-menu  w3- w3-right w3-hover-white"
-        style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal" id="nav-login">Login</div>
+        style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal" id="nav-login">Login
+      </div>
       <div onclick="location.href='Universities.html';"
         class="navBarButton w3-button w3-hide-small font-menu  w3-right w3-hover-white" style="padding: 25px 16px;">
-        Universities</div> 
+        Universities</div>
       <div onclick="location.href='summaries.html';"
         class="navBarButton w3-button w3-hide-small font-menu  w3-right w3-hover-white" style="padding: 25px 16px;">
         Summaries</div>
@@ -123,15 +125,15 @@
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
       <a href="forum.html" class="w3-bar-item w3-button w3-padding-large" style="text-align: center;">Forum</a>
       <a href="summaries.html" class="w3-bar-item w3-button w3-padding-large" style="text-align: center;">Summaries</a>
-      <a href="Universities.html" class="w3-bar-item w3-button w3-padding-large" style="text-align: center;">Universities</a>
+      <a href="Universities.html" class="w3-bar-item w3-button w3-padding-large"
+        style="text-align: center;">Universities</a>
     </div>
   </div>
 
-  <header class="w3-container setGray w3-center"
-    style="width: 100%; height: calc(100vh - 83px); flex-direction: row;">
+  <header class="w3-container setGray w3-center" style="width: 100%; height: calc(100vh - 83px); flex-direction: row;">
     <div class="container">
-      
-      
+
+
       <div class="filters-container" style="height: 100%; flex-flow: column;">
         <h2 class="titles"><i class="fa-solid fa-filter"></i> FILTERS</h2>
         <form action="" class="filters-form">
@@ -168,102 +170,128 @@
         </form>
       </div>
       <div class="right-container" style="height: 100%;">
-        <h2 class="titles" style="margin-left: 5px;"  id="summaries_name"><i class="fa-solid fa-book-open"></i> SUMMARIES</h2>
+        <h2 class="titles" style="margin-left: 5px;" id="summaries_name"><i class="fa-solid fa-book-open"></i> SUMMARIES
+        </h2>
         <div class="summaries-box" style="padding: 5px;">
 
-          
+
           <div class="summarie" onclick="premiumContentSum()">
             <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
-            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
-              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
-              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div style="display: flex; flex-direction:column">
+              <div class="summarie-desc" style="font-size: 20px;max-height: 27px;">Títalo</div>
+              <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
             <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
           </div>
 
           <div class="summarie" onclick="premiumContentSum()">
             <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
-            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
-              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
-              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div style="display: flex; flex-direction:column">
+              <div class="summarie-desc" style="font-size: 20px;max-height: 27px;">Títalo</div>
+              <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
             <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
           </div>
-          <div class="summarie" onclick="premiumContentSum()">
-            <div class="summarie-icon"><i class="fa-solid fa-folder fa-2xl"></i></div>
-            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
-              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
-              nam. Perspiciatis temporibus accusamus quis earum!</div>
-            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
-          </div>
+
           <div class="summarie" onclick="premiumContentSum()">
             <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
-            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
-              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
-              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div style="display: flex; flex-direction:column">
+              <div class="summarie-desc" style="font-size: 20px;max-height: 27px;">Títalo</div>
+              <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
             <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
           </div>
-          <div class="summarie" onclick="premiumContentSum()">
-            <div class="summarie-icon"><i class="fa-solid fa-folder fa-2xl"></i></div>
-            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
-              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
-              nam. Perspiciatis temporibus accusamus quis earum!</div>
-            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
-          </div>
+
           <div class="summarie" onclick="premiumContentSum()">
             <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
-            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
-              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
-              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div style="display: flex; flex-direction:column">
+              <div class="summarie-desc" style="font-size: 20px;max-height: 27px;">Títalo</div>
+              <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
             <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
           </div>
-          <div class="summarie" onclick="premiumContentSum()">
-            <div class="summarie-icon"><i class="fa-solid fa-folder fa-2xl"></i></div>
-            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
-              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
-              nam. Perspiciatis temporibus accusamus quis earum!</div>
-            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
-          </div>
-          <div class="summarie" onclick="premiumContentSum()">
-            <div class="summarie-icon"><i class="fa-solid fa-folder fa-2xl"></i></div>
-            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
-              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
-              nam. Perspiciatis temporibus accusamus quis earum!</div>
-            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
-          </div>
+
           <div class="summarie" onclick="premiumContentSum()">
             <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
-            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
-              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
-              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div style="display: flex; flex-direction:column">
+              <div class="summarie-desc" style="font-size: 20px;max-height: 27px;">Títalo</div>
+              <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
             <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
           </div>
-          <div class="summarie" onclick="premiumContentSum()" data-toggle="modal" >
-            <div class="summarie-icon"><i class="fa-solid fa-folder fa-2xl"></i></div>
-            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
-              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
-              nam. Perspiciatis temporibus accusamus quis earum!</div>
-            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
-          </div>
-          <div class="summarie" onclick="premiumContentSum()">
-            <div class="summarie-icon"><i class="fa-solid fa-folder fa-2xl"></i></div>
-            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
-              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
-              nam. Perspiciatis temporibus accusamus quis earum!</div>
-            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
-          </div>
+
           <div class="summarie" onclick="premiumContentSum()">
             <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
-            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
-              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
-              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div style="display: flex; flex-direction:column">
+              <div class="summarie-desc" style="font-size: 20px;max-height: 27px;">Títalo</div>
+              <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
             <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
           </div>
+
           <div class="summarie" onclick="premiumContentSum()">
-            <div class="summarie-icon"><i class="fa-solid fa-folder fa-2xl"></i></div>
-            <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero assumenda aliquam
-              pariatur rem voluptatum, architecto ipsum amet est, quaerat consequatur aspernatur facilis id provident
-              nam. Perspiciatis temporibus accusamus quis earum!</div>
+            <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
+            <div style="display: flex; flex-direction:column">
+              <div class="summarie-desc" style="font-size: 20px;max-height: 27px;">Títalo</div>
+              <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
             <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
           </div>
+
+          <div class="summarie" onclick="premiumContentSum()">
+            <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
+            <div style="display: flex; flex-direction:column">
+              <div class="summarie-desc" style="font-size: 20px;max-height: 27px;">Títalo</div>
+              <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+          </div>
+
+          <div class="summarie" onclick="premiumContentSum()">
+            <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
+            <div style="display: flex; flex-direction:column">
+              <div class="summarie-desc" style="font-size: 20px;max-height: 27px;">Títalo</div>
+              <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+          </div>
+
+          <div class="summarie" onclick="premiumContentSum()">
+            <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
+            <div style="display: flex; flex-direction:column">
+              <div class="summarie-desc" style="font-size: 20px;max-height: 27px;">Títalo</div>
+              <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+          </div>
+
+          <div class="summarie" onclick="premiumContentSum()">
+            <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
+            <div style="display: flex; flex-direction:column">
+              <div class="summarie-desc" style="font-size: 20px;max-height: 27px;">Títalo</div>
+              <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+          </div>
+
+          <div class="summarie" onclick="premiumContentSum()">
+            <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
+            <div style="display: flex; flex-direction:column">
+              <div class="summarie-desc" style="font-size: 20px;max-height: 27px;">Títalo</div>
+              <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+          </div>
+
+          <div class="summarie" onclick="premiumContentSum()">
+            <div class="summarie-icon"><i class="fa-solid fa-file-lines fa-2xl"></i></div>
+            <div style="display: flex; flex-direction:column">
+              <div class="summarie-desc" style="font-size: 20px;max-height: 30px;">Títalo</div>
+              <div class="summarie-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+            </div>
+            <div class="summarie-star" onclick="fav(this)"><i class="fa-regular fa-star fa-2xl"></i></div>
+          </div>
+
           <script src="js/main.js"></script>
 
         </div>
