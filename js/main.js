@@ -187,13 +187,37 @@ async function comment(){
     document.getElementById("botaocomentar").innerHTML = saveOriginal3;
 }
 
-function summarieUpdate(){
+async function summarieUpdate(){
     var selected_option = document.getElementById("grade").value
     var selected_option2 = document.getElementById("discipline").value
     if (selected_option != ""){
         document.getElementById("summaries_name").innerHTML = '<i class="fa-solid fa-book-open"></i>' + ' ' +  selected_option + ' GRADE ' +  selected_option2 + ' SUMMARIES'
     }else{
         document.getElementById("summaries_name").innerHTML = '<i class="fa-solid fa-book-open"></i>' + ' ' +  selected_option2 + ' SUMMARIES'
+    }
+    if(selected_option2 != ""){
+        console.log(selected_option2)
+        var elements = document.getElementsByClassName("titalo");
+        // elements.style.display = "none";
+        for (var i = 0, len = elements.length; i < len; i++) {
+            elements[i].parentElement.parentElement.style.display = "none";
+        }
+        for (var i = 0, len = elements.length; i < len; i++) {
+            await delay(000)
+            elements[i].innerHTML = selected_option2
+            elements[i].parentElement.parentElement.style.display = "flex";
+        }
+    }else{
+        var elements = document.getElementsByClassName("titalo");
+        console.log(elements)
+        for (var i = 0, len = elements.length; i < len; i++) {
+            elements[i].parentElement.parentElement.style.display = "none";
+        }
+        for (var i = 0, len = elements.length; i < len; i++) {
+            await delay(000)
+            elements[i].innerHTML = "DISCIPLINE"
+            elements[i].parentElement.parentElement.style.display = "flex";
+        }
     }
 }
 
@@ -297,5 +321,4 @@ function universitiesUpdate(){
         document.getElementById("university10").style.display = "none"
     }
     
-
 }
