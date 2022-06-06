@@ -233,6 +233,7 @@ function universitiesUpdate(){
     document.getElementById("university8").style.display = "flex";
     document.getElementById("university9").style.display = "flex";
     document.getElementById("university10").style.display = "flex";
+    document.getElementById("fakeuni").style.display = "none";
     if (selected_option == ""){
         document.getElementById("uni1").innerHTML = 'Universidade de Lisboa : Engineering';
         document.getElementById("uni2").innerHTML = 'Universidade do Porto : Medicine';
@@ -244,10 +245,19 @@ function universitiesUpdate(){
         document.getElementById("uni8").innerHTML = 'Universidade Nova de Lisboa : Medicine';
         document.getElementById("uni9").innerHTML = 'Universidade de Lisboa : Science';
         document.getElementById("uni10").innerHTML = 'Universidade do Porto - Architecture';
-    }
-    if (selected_option == "Medicine"){
+        document.getElementById("uni1link").setAttribute('onclick',"window.open('https://www.ulisboa.pt/', '_blank')")
+        document.getElementById("uni2link").setAttribute('onclick',"window.open('https://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=home', '_blank')")
+        document.getElementById("uni3link").setAttribute('onclick',"window.open('https://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=home', '_blank')")
+        document.getElementById("uni4link").setAttribute('onclick',"window.open('https://www.uminho.pt/PT', '_blank')")
+        document.getElementById("uni5link").setAttribute('onclick',"window.open('https://www.ua.pt/', '_blank')")
+        document.getElementById("uni5link").setAttribute('onclick',"window.open('https://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=home', '_blank')")
+        document.getElementById("uni7link").setAttribute('onclick',"window.open('https://www.uc.pt/', '_blank')")
+        document.getElementById("uni8link").setAttribute('onclick',"window.open('https://www.unl.pt/', '_blank')")
+        document.getElementById("uni9link").setAttribute('onclick',"window.open('https://www.ulisboa.pt/', '_blank')")
+        document.getElementById("uni10link").setAttribute('onclick',"window.open('https://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=home', '_blank')")
+    } else if (selected_option == "Medicine"){
         document.getElementById("uni1").innerHTML = 'Universidade do Porto';
-        document.getElementById("uni2").innerHTML = 'Universidade do Porto - 2';
+        document.getElementById("uni2").innerHTML = 'Instituto Politécnico do Porto';
         document.getElementById("uni3").innerHTML = 'Universidade do Minho';
         document.getElementById("uni4").innerHTML = 'Universidade de Coimbra';
         document.getElementById("uni5").innerHTML = 'Universidade Nova de Lisboa';
@@ -255,21 +265,34 @@ function universitiesUpdate(){
         document.getElementById("uni7").innerHTML = 'Universidade da Beira Interior';
         document.getElementById("uni8").innerHTML = 'Universidade dos Açores';
         document.getElementById("uni9").innerHTML = 'Universidade da Madeira';
+        document.getElementById("uni1link").setAttribute('onclick',"window.open('https://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=home', '_blank')")
+        document.getElementById("uni2link").setAttribute('onclick',"window.open('https://www.ipp.pt/', '_blank')")
+        document.getElementById("uni3link").setAttribute('onclick',"window.open('https://www.uminho.pt/PT', '_blank')")
+        document.getElementById("uni4link").setAttribute('onclick',"window.open('https://www.uc.pt/', '_blank')")
+        document.getElementById("uni5link").setAttribute('onclick',"window.open('https://www.unl.pt/', '_blank')")
+        document.getElementById("uni6link").setAttribute('onclick',"window.open('https://www.ulisboa.pt/', '_blank')")
+        document.getElementById("uni7link").setAttribute('onclick',"window.open('https://www.ubi.pt/', '_blank')")
+        document.getElementById("uni8link").setAttribute('onclick',"window.open('https://www.uac.pt/', '_blank')")
+        document.getElementById("uni9link").setAttribute('onclick',"window.open('https://www.uma.pt/', '_blank')")
         document.getElementById("university10").style.display = "none";
-    }
-    if (selected_option == "Education"){
+    } else if (selected_option == "Education"){
         document.getElementById("uni1").innerHTML = 'Universidade do Minho';
         document.getElementById("uni2").innerHTML = 'Universidade do Porto';
         document.getElementById("uni3").innerHTML = 'Universidade de Coimbra';
         document.getElementById("uni4").innerHTML = 'Universidade de Lisboa';
         document.getElementById("uni5").innerHTML = 'Universidade dos Açores';
         document.getElementById("uni6").innerHTML = 'Universidade da Madeira';
+        document.getElementById("uni1link").setAttribute('onclick',"window.open('https://www.uminho.pt/PT', '_blank')")
+        document.getElementById("uni2link").setAttribute('onclick',"window.open('https://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=home', '_blank')")
+        document.getElementById("uni3link").setAttribute('onclick',"window.open('https://www.uc.pt/', '_blank')")
+        document.getElementById("uni4link").setAttribute('onclick',"window.open('https://www.ulisboa.pt/', '_blank')")
+        document.getElementById("uni5link").setAttribute('onclick',"window.open('https://www.uac.pt/', '_blank')")
+        document.getElementById("uni6link").setAttribute('onclick',"window.open('https://www.uma.pt/', '_blank')")
         document.getElementById("university7").style.display = "none";
         document.getElementById("university8").style.display = "none";
         document.getElementById("university9").style.display = "none";
         document.getElementById("university10").style.display = "none";
-    }
-    if (selected_option == "Engineering"){
+    } else if (selected_option == "Engineering"){
         document.getElementById("uni1").innerHTML = 'Universidade de Aveiro';
         document.getElementById("uni2").innerHTML = 'Universidade de Lisboa';
         document.getElementById("uni3").innerHTML = 'Universidade do Porto';
@@ -279,46 +302,28 @@ function universitiesUpdate(){
         document.getElementById("uni7").innerHTML = 'Universidade dos Açores';
         document.getElementById("uni8").innerHTML = 'Universidade da Madeira';
         document.getElementById("uni9").innerHTML = 'Universidade Católica';
-        document.getElementById("uni10").innerHTML = "Universidade Nova de Lisboa"
+        document.getElementById("uni10").innerHTML = "Universidade Nova de Lisboa";
+        document.getElementById("uni1link").setAttribute('onclick',"window.open('https://www.ua.pt/', '_blank')")
+        document.getElementById("uni2link").setAttribute('onclick',"window.open('https://www.ulisboa.pt/', '_blank')")
+        document.getElementById("uni3link").setAttribute('onclick',"window.open('https://sigarra.up.pt/up/pt/web_base.gera_pagina?p_pagina=home', '_blank')")
+        document.getElementById("uni4link").setAttribute('onclick',"window.open('https://www.ipp.pt/', '_blank')")
+        document.getElementById("uni5link").setAttribute('onclick',"window.open('https://www.uminho.pt/PT', '_blank')")
+        document.getElementById("uni6link").setAttribute('onclick',"window.open('https://www.uc.pt/', '_blank')")
+        document.getElementById("uni7link").setAttribute('onclick',"window.open('https://www.uac.pt/', '_blank')")
+        document.getElementById("uni8link").setAttribute('onclick',"window.open('https://www.uma.pt/', '_blank')")
+        document.getElementById("uni9link").setAttribute('onclick',"window.open('https://www.ucp.pt/pt-pt', '_blank')")
+        document.getElementById("uni10link").setAttribute('onclick',"window.open('https://www.unl.pt/', '_blank')")
+    } else {
+        document.getElementById("university1").style.display = "none";
+        document.getElementById("university2").style.display = "none";
+        document.getElementById("university3").style.display = "none";
+        document.getElementById("university4").style.display = "none";
+        document.getElementById("university5").style.display = "none";
+        document.getElementById("university6").style.display = "none";
+        document.getElementById("university7").style.display = "none";
+        document.getElementById("university8").style.display = "none";
+        document.getElementById("university9").style.display = "none";
+        document.getElementById("university10").style.display = "none";
+        document.getElementById("fakeuni").style.display = "flex";
     }
-    if (selected_option == "ss"){
-        document.getElementById("uni1").innerHTML = 
-        document.getElementById("uni2").innerHTML = 
-        document.getElementById("uni3").innerHTML = 
-        document.getElementById("uni4").innerHTML = 
-        document.getElementById("uni5").innerHTML = 
-        document.getElementById("uni6").innerHTML = 
-        document.getElementById("uni7").innerHTML = 
-        document.getElementById("uni8").innerHTML = 
-        document.getElementById("uni9").innerHTML = 
-        document.getElementById("uni10").innerHTML =
-        document.getElementById("university10").style.display = "none"
-    }
-    if (selected_option == "ss"){
-        document.getElementById("uni1").innerHTML = 
-        document.getElementById("uni2").innerHTML = 
-        document.getElementById("uni3").innerHTML = 
-        document.getElementById("uni4").innerHTML = 
-        document.getElementById("uni5").innerHTML = 
-        document.getElementById("uni6").innerHTML = 
-        document.getElementById("uni7").innerHTML = 
-        document.getElementById("uni8").innerHTML = 
-        document.getElementById("uni9").innerHTML = 
-        document.getElementById("uni10").innerHTML =
-        document.getElementById("university10").style.display = "none"
-    }
-    if (selected_option == "ss"){
-        document.getElementById("uni1").innerHTML = 
-        document.getElementById("uni2").innerHTML = 
-        document.getElementById("uni3").innerHTML = 
-        document.getElementById("uni4").innerHTML = 
-        document.getElementById("uni5").innerHTML = 
-        document.getElementById("uni6").innerHTML = 
-        document.getElementById("uni7").innerHTML = 
-        document.getElementById("uni8").innerHTML = 
-        document.getElementById("uni9").innerHTML = 
-        document.getElementById("uni10").innerHTML =
-        document.getElementById("university10").style.display = "none"
-    }
-    
 }
