@@ -17,44 +17,45 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <script src="https://kit.fontawesome.com/272ebe4f5a.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/272ebe4f5a.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
   <div class="modal-box">
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document" style="margin: 20vh auto;">
-          <div class="modal-content clearfix">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-              style="background: #e8d1a9;font-weight: bold;height: 35px; width: 35px;">X</button>
-            <div class="modal-body">
-              <h3 class="title"  style="color: #e8d1a9;font-weight: bold;">Login In</h3>
-              <p class="description">Sign in to access your acount</p>
-              <div class="form-group">
-                <span class="input-icon"><i class="fa fa-envelope"></i></span>
-                <input type="email" class="form-control" placeholder="Email Account">
-              </div>
-              <div class="form-group">
-                <span class="input-icon"><i class="fas fa-lock"></i></span>
-                <input type="password" class="form-control" placeholder="Password">
-              </div>
-              <div>
-                <div class="form-group checkbox w3-left">
-                  <input type="checkbox" class="double" style="margin: 0px; background-color: #2B475C; "><label
-                    style="color: #2B475C;">Remember me</label>
-                </div>
-                <div class="w3-right">
-                  <a href="" class="forgot-pass" style=" width: fit-content;  color: #2B475C;">Forgot Password?</a>
-                </div>
-              </div>
-              <a href="#" class="forgot-pass" style="color: #2B475C;">Haven't become a member yet?</a>
-              <button class="btn" onclick="login(this)" style=" margin-top: 15px; background: #e8d1a9;font-weight: bold;">Login</button>
+      <div class="modal-dialog" role="document" style="margin: 20vh auto;">
+        <div class="modal-content clearfix">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+            style="background: #e8d1a9;font-weight: bold;height: 35px; width: 35px;">X</button>
+          <div class="modal-body">
+            <h3 class="title" style="color: #e8d1a9;font-weight: bold;">Login In</h3>
+            <p class="description">Sign in to access your acount</p>
+            <div class="form-group">
+              <span class="input-icon"><i class="fa fa-envelope"></i></span>
+              <input type="email" class="form-control" placeholder="Email Account">
             </div>
+            <div class="form-group">
+              <span class="input-icon"><i class="fas fa-lock"></i></span>
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div>
+              <div class="form-group checkbox w3-left">
+                <input type="checkbox" class="double" style="margin: 0px; background-color: #2B475C; "><label
+                  style="color: #2B475C;">Remember me</label>
+              </div>
+              <div class="w3-right">
+                <a href="" class="forgot-pass" style=" width: fit-content;  color: #2B475C;">Forgot Password?</a>
+              </div>
+            </div>
+            <a href="#" class="forgot-pass" style="color: #2B475C;">Haven't become a member yet?</a>
+            <button class="btn" onclick="login(this)"
+              style=" margin-top: 15px; background: #e8d1a9;font-weight: bold;">Login</button>
           </div>
         </div>
       </div>
-</div>
+    </div>
+  </div>
 
   <!-- Navbar -->
   <div class=" w3-top textColor1 fixed-top" id="main-nav-bar">
@@ -69,17 +70,22 @@
         <div class="navBarButton w3-bar-item  w3-small w3-large maxSize" style="padding: 0;">
           <img class="maxSize" src="logoImage.png" alt="Logo">
         </div>
-        <div class="navBarButton w3-button w3-small w3-large " style="margin-right: 40px; padding: 25px 16px;"><b>UniForum</b>  
+        <div class="navBarButton w3-button w3-small w3-large " style="margin-right: 40px; padding: 25px 16px;">
+          <b>UniForum</b>
         </div>
       </div>
       <div class="navBarButton w3-button w3-hide-small font-menu  w3-right "
-        style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal" id="nav-login"><b>Login</b></div>
+        style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal" id="nav-login">
+        <b>Login</b>
+      </div>
       <div onclick="location.href='Universities.html';"
         class="navBarButton w3-button w3-hide-small font-menu  w3-right " style="padding: 25px 16px;">
-        <b>Universities</b></div> 
-      <div onclick="location.href='summaries.html';"
-        class="navBarButton w3-button w3-hide-small font-menu  w3-right " style="padding: 25px 16px;">
-        <b>Summaries</b></div>
+        <b>Universities</b>
+      </div>
+      <div onclick="location.href='summaries.html';" class="navBarButton w3-button w3-hide-small font-menu  w3-right "
+        style="padding: 25px 16px;">
+        <b>Summaries</b>
+      </div>
       <div onclick="location.href='forum.html';" href="#"
         class="navBarButton w3-button w3-hide-small font-menu w3-right " style="padding: 25px 16px;"><b>Forum</b>
       </div>
@@ -89,7 +95,8 @@
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-hide-small w3-large">
       <a href="forum.html" class="w3-bar-item w3-button w3-padding-large" style="text-align: center;">Forum</a>
       <a href="summaries.html" class="w3-bar-item w3-button w3-padding-large" style="text-align: center;">Summaries</a>
-      <a href="Universities.html" class="w3-bar-item w3-button w3-padding-large" style="text-align: center;">Universities</a>
+      <a href="Universities.html" class="w3-bar-item w3-button w3-padding-large"
+        style="text-align: center;">Universities</a>
     </div>
   </div>
 

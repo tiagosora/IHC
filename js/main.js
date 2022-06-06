@@ -63,9 +63,11 @@ function fav(element){
 }
 
 function remove_element(element){
+    console.log(element.parentElement)
     document.getElementById("modalPost").style.display = "block";
     document.getElementById("alert").style.display = "flex";
-    globalThis.toErase = element; 
+    globalThis.toErase = element.parentElement; 
+
 }
 
 async function Wanna_remove(){
@@ -80,6 +82,7 @@ async function Wanna_remove(){
     await delay(500);
     document.getElementById("modalPost").style.display = "none";
     document.getElementById("alert").style.display = "none";
+    console.log(toErase)
     toErase.remove();
     document.getElementById("ok_remove").innerHTML = back_up;
 }
