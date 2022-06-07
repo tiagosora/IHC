@@ -43,9 +43,11 @@
 <body>
   <div class="oModal" id="modalPost">
     <div class="alert" id="alert">
+      <button onclick="closeAlert()" type="button" class="close" data-dismiss="modal" aria-label="Close"
+      style="background: #ee3b2b;font-weight: bold;height: 35px; width: 35px;margin-left: auto;">X</button>
       <h2>Alert</h2>
       <h4>You have to be logged in to access this content</h4>
-      <button onclick="closeAlert()" data-toggle="modal" data-target="#myModal" class="post-button">Ok</button>
+      <button onclick="closeAlert()" data-toggle="modal" data-target="#myModal" class="post-button">Login</button>
     </div>
   </div>
   <script>
