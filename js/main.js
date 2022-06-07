@@ -122,8 +122,18 @@ async function Wanna_remove(){
     document.getElementById("modalPost").style.display = "none";
     document.getElementById("alert").style.display = "none";
     document.getElementById("ok_remove").innerHTML = back_up;
-    remove_element()
+    if (toErase != ""){
+        toErase.remove();
+    }
 }
+
+function remove_element(element){
+    console.log(element.parentElement)
+    document.getElementById("modalPost").style.display = "block";
+    document.getElementById("alert").style.display = "flex";
+    globalThis.toErase = element.parentElement;
+}
+
 
 async function getInfosPost(){
     var postTitle = document.getElementById("postTitle");
@@ -136,6 +146,8 @@ async function getInfosPost(){
     makeThePost();
 
 }
+
+
 
 function makeThePost(){
 
@@ -349,3 +361,11 @@ function universitiesUpdate(){
         document.getElementById("fakeuni").style.display = "flex";
     }
 }
+
+document.getElementById('switchy').addEventListener('click', function(){
+    if (document.getElementById('switchy').checked){
+      document.body.classList.add('active');
+    }else{
+      document.body.classList.remove('active');
+    }
+  });
