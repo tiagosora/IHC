@@ -66,31 +66,48 @@ function fav(element){
     }
 }
 
+globalThis.banana = new HTMLElement();
 function fav_sum(element){
     if(checkLogin() === true){
-        console.log(isLogged);
-        console.log(element);
         if(element.className == "fa-solid fa-star fa-2xl"){
-        document.getElementById("modalPost").style.display = "block";
-        document.getElementById("alert").style.display = "flex";
+            banana = element;
+            console.log(banana)
+            document.getElementById("modalPost").style.display = "block";
+            document.getElementById("alert").style.display = "flex";
         }else{
             element.className = "fa-solid fa-star fa-2xl"
         }
-    }else{
+    }else{fav_sum
         console.log("Not logged in");
         document.getElementById("modalPost2").style.display = "block";
         document.getElementById("alert2").style.display = "flex";
     }
 }
 
-function remove_element(element){
-    console.log(element.parentElement)
-    document.getElementById("modalPost").style.display = "block";
-    document.getElementById("alert").style.display = "flex";
-    globalThis.toErase = element.parentElement; 
-
+function remove_this_banana(){
+    if (banana != null) {
+        banana.className = "fa-regular fa-star fa-2xl"
+        banana = null;
+    }
 }
-globalThis.toErase = ""
+
+async function Wanna_remove_banana(){
+
+    var back_up = document.getElementById("ok_remove").innerHTML;
+    document.getElementById("ok_remove").innerHTML = "Erasing";
+    for(let i = 0; i < 3; i++){
+
+        await delay(400);
+        document.getElementById("ok_remove").innerHTML+=". ";
+    }
+    await delay(500);
+    document.getElementById("modalPost").style.display = "none";
+    document.getElementById("alert").style.display = "none";
+    document.getElementById("ok_remove").innerHTML = back_up;
+    console.log(banana)
+    remove_this_banana()
+}
+
 
 async function Wanna_remove(){
 
@@ -104,10 +121,8 @@ async function Wanna_remove(){
     await delay(500);
     document.getElementById("modalPost").style.display = "none";
     document.getElementById("alert").style.display = "none";
-    if (toErase != ""){
-        toErase.remove();
-    }
     document.getElementById("ok_remove").innerHTML = back_up;
+    remove_element()
 }
 
 async function getInfosPost(){
