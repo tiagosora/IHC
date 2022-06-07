@@ -66,6 +66,23 @@ function fav(element){
     }
 }
 
+function fav_sum(element){
+    if(checkLogin() === true){
+        console.log(isLogged);
+        console.log(element);
+        if(element.className == "fa-solid fa-star fa-2xl"){
+        document.getElementById("modalPost").style.display = "block";
+        document.getElementById("alert").style.display = "flex";
+        }else{
+            element.className = "fa-solid fa-star fa-2xl"
+        }
+    }else{
+        console.log("Not logged in");
+        document.getElementById("modalPost2").style.display = "block";
+        document.getElementById("alert2").style.display = "flex";
+    }
+}
+
 function remove_element(element){
     console.log(element.parentElement)
     document.getElementById("modalPost").style.display = "block";
@@ -73,6 +90,7 @@ function remove_element(element){
     globalThis.toErase = element.parentElement; 
 
 }
+globalThis.toErase = ""
 
 async function Wanna_remove(){
 
@@ -86,8 +104,9 @@ async function Wanna_remove(){
     await delay(500);
     document.getElementById("modalPost").style.display = "none";
     document.getElementById("alert").style.display = "none";
-    console.log(toErase)
-    toErase.remove();
+    if (toErase != ""){
+        toErase.remove();
+    }
     document.getElementById("ok_remove").innerHTML = back_up;
 }
 
