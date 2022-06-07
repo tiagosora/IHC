@@ -373,10 +373,21 @@ function universitiesUpdate(){
     }
 }
 
-document.getElementById('switchy').addEventListener('click', function(){
+function Change_Liked_Created_Sums(){
     if (document.getElementById('switchy').checked){
       document.body.classList.add('active');
+      document.getElementById("summaries_name").innerHTML = `<i class="fa-solid fa-book-open"></i> Posted Sums`
+      var elements = document.getElementsByClassName("titalo")
+      for (var i = 0, len = 5; i < len; i++) {
+        elements[i].parentElement.parentElement.style.display = "none";
+    }
     }else{
       document.body.classList.remove('active');
+      document.getElementById("summaries_name").innerHTML = `<i class="fa-solid fa-book-open"></i> Liked Sums`
+      var elements = document.getElementsByClassName("titalo")
+      for (var i = 0, len = 5; i < len; i++) {
+        elements[i].parentElement.parentElement.style.display = "flex";
     }
-  });
+    }
+  };
+

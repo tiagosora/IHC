@@ -103,7 +103,7 @@ button {
 }
 
 .setGreen {
-    background-color: #618672;
+  background-color: #618672;
 }
 
 .setGray {
@@ -226,13 +226,13 @@ button {
   padding: 60px 40px 40px !important;
 }
 
-.animacao{
-    border: none; 
-    border-radius: 5px; 
-    background-color: #618672;
-    padding: 8px 15px;
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
+.animacao {
+  border: none;
+  border-radius: 5px;
+  background-color: #618672;
+  padding: 8px 15px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
 
 .animacao:hover {
@@ -562,20 +562,20 @@ header > .container > div:nth-child(2) {
 }
 
 #snackbarRed {
-    visibility: hidden;
-    min-width: 250px;
-    margin-left: -125px;
-    background-color: rgb(40, 173, 95);
-    color: #fff;
-    text-align: center;
-    border-radius: 2px;
-    padding: 16px;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    bottom: 30px;
-    font-size: 17px;
-  }
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: rgb(40, 173, 95);
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
 
 #snackbar.show {
   visibility: visible;
@@ -584,23 +584,47 @@ header > .container > div:nth-child(2) {
 }
 
 @-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;} 
-  to {bottom: 30px; opacity: 1;}
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;} 
-  to {bottom: 0; opacity: 0;}
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
 
 @keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
 
 .summaries-container h2 {
