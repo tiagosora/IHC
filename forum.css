@@ -88,8 +88,12 @@
 
 .comentario .user .avatar {
     min-height: unset !important;
-    min-width: unset !important;    
+    min-width: unset !important;
+    padding: 30px;
+    width: 30px;
+    margin: auto;
 }
+
 
 .comentario .conteudo{
     background-color: rgb(244, 244, 244);
