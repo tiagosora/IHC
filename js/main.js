@@ -59,6 +59,10 @@ function fav(element){
         }else{
             icon.className = "fa-solid fa-star fa-2xl"
         }
+    }else{
+        console.log("Not logged in");
+        document.getElementById("modalPost").style.display = "block";
+        document.getElementById("alert").style.display = "flex";
     }
 }
 
@@ -134,16 +138,6 @@ function callModal(){
     document.getElementById("publicar").style.display = "flex";
 }
 
-function premiumContentSum(){
-    if(checkLogin() == true){
-        console.log("sucess");
-        fav()
-    }else{
-        console.log("Not logged in");
-        document.getElementById("modalPost").style.display = "block";
-        document.getElementById("alert").style.display = "flex";
-    }
-}
 
 function premiumContentPerf(){
     if(checkLogin() == true){

@@ -573,6 +573,11 @@ header>.container>div:nth-child(2) {
     border-radius: 5px;
 }
 
+.summarie:hover {
+    cursor: pointer;
+    background-color: rgb(220, 220, 220)
+}
+
 .summarie .summarie-icon {
     width: 15%;
     height: 100%;
