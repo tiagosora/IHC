@@ -135,39 +135,32 @@
     <!-- Navbar -->
   <div class=" w3-top textColor1 fixed-top" id="main-nav-bar">
     <div class=" w3-bar setGray w3-card w3-left-align" style="height: 80px;">
-      <div class="navBarButton w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-large"
-        style="margin-right: 20px;margin-top: 3px;" href="javascript:void(0);" onclick="myFunction()"
-        title="Toggle Navigation Menu">
-        <i class="fa fa-bars"></i>
-      </div>
       <div onclick="location.href='home.html';" class="navBarButton w3-bar-item  w3-small w3-large"
-        style="padding: 0; margin-left: 40px">
+        style="padding: 0; margin-left: 40px; cursor:  pointer;">
         <div class="navBarButton w3-bar-item  w3-small w3-large maxSize" style="padding: 0;">
           <img class="maxSize" src="logoImage.png" alt="Logo">
         </div>
-        <div class="navBarButton w3-button w3-small w3-large " style="margin-right: 40px; padding: 25px 16px;">UniForum
+        <div class="navBarButton w3-button w3-small w3-large " style="margin-right: 40px; padding: 25px 16px;">
+          <b>UniForum</b>
         </div>
       </div>
-      <div class="navBarButton w3-button w3-hide-small font-menu  w3- w3-right w3-hover-white"
-        style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal" id="nav-login">Login</div>
+      <div class="navBarButton w3-button w3-hide-small font-menu  w3-right "
+        style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal" id="nav-login">
+        <b>Login</b>
+      </div>
       <div onclick="location.href='Universities.html';"
-        class="navBarButton w3-button w3-hide-small font-menu  w3-right w3-hover-white" style="padding: 25px 16px;">
-        Universities</div> 
-      <div onclick="location.href='summaries.html';"
-        class="navBarButton w3-button w3-hide-small font-menu  w3-right w3-hover-white" style="padding: 25px 16px;">
-        Summaries</div>
+        class="navBarButton w3-button w3-hide-small font-menu  w3-right " style="padding: 25px 16px;">
+        <b>Universities</b>
+      </div>
+      <div onclick="location.href='summaries.html';" class="navBarButton w3-button w3-hide-small font-menu  w3-right "
+        style="padding: 25px 16px;">
+        <b>Summaries</b>
+      </div>
       <div onclick="location.href='forum.html';" href="#"
-        class="navBarButton w3-button w3-hide-small font-menu w3-right w3-hover-white" style="padding: 25px 16px;">Forum
+        class="navBarButton w3-button w3-hide-small font-menu w3-right " style="padding: 25px 16px;"><b>Forum</b>
       </div>
     </div>
-
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-          <a href="forum.html" class="w3-bar-item w3-button w3-padding-large" style="text-align: center;">Forum</a>
-          <a href="summaries.html" class="w3-bar-item w3-button w3-padding-large" style="text-align: center;">Summaries</a>
-          <a href="Universities.html" class="w3-bar-item w3-button w3-padding-large" style="text-align: center;">Universities</a>
-        </div>
-    </div>
+  </div>
 
     <header class="w3-container setGray w3-center"
         style="width: 100%; height: calc(100vh - 83px); flex-direction: row;">
@@ -180,8 +173,8 @@
                         <input type="text" class="input-field" placeholder="search">
                     </div>
                     <div class="form-spacer">
-                        <i class="fa-solid fa-graduation-cap" style="padding-top: 7px;"></i>
-                        <select class="input-field" name="" id="">
+                        <i class="fa-solid fa-graduation-cap" style="padding-top: 7px; cursor: pointer;"></i>
+                        <select class="input-field" name="" id="" style="cursor: pointer;">
                             <option value="">Theme</option>
                             <option value="">Access to university Ed</option>
                             <option value="">Courses</option>
@@ -189,8 +182,8 @@
                         </select>
                     </div>
                     <div class="form-spacer">
-                        <i class="fa-solid fa-book" style="padding-top: 7px;"></i>
-                        <select class="input-field" name="" id="">
+                        <i class="fa-solid fa-book" style="padding-top: 7px; cursor: pointer;"></i>
+                        <select class="input-field" name="" id="" style="cursor: pointer;">
                             <option value="">Subtheme</option>
                             <option value="">Medicine</option>
                             <option value="">Education</option>

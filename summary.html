@@ -99,15 +99,10 @@
 
 
   <!-- Navbar -->
-  <div class=" w3-top textColor1 fixed-top">
+  <div class=" w3-top textColor1 fixed-top" id="main-nav-bar">
     <div class=" w3-bar setGray w3-card w3-left-align" style="height: 80px;">
-      <div class="navBarButton w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-large"
-        style="margin-right: 20px;margin-top: 3px;" href="javascript:void(0);" onclick="myFunction()"
-        title="Toggle Navigation Menu">
-        <i class="fa fa-bars"></i>
-      </div>
-      <div onclick="location.href='home.html';" class="navBarButton w3-bar-item w3-small w3-large"
-        style="padding: 0; margin-left: 40px">
+      <div onclick="location.href='home.html';" class="navBarButton w3-bar-item  w3-small w3-large"
+        style="padding: 0; margin-left: 40px; cursor:  pointer;">
         <div class="navBarButton w3-bar-item  w3-small w3-large maxSize" style="padding: 0;">
           <img class="maxSize" src="logoImage.png" alt="Logo">
         </div>
@@ -115,35 +110,22 @@
           <b>UniForum</b>
         </div>
       </div>
-      <div class="navBarButton w3-button w3-hide-small font-menu w3- w3-right w3-hover-white"
-        style="margin-right: 40px; padding: 25px 16px" data-toggle="modal" data-target="#myModal" id="nav-login">
-        Login
+      <div class="navBarButton w3-button w3-hide-small font-menu  w3-right "
+        style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal" id="nav-login">
+        <b>Login</b>
       </div>
       <div onclick="location.href='Universities.html';"
-        class="navBarButton w3-button w3-hide-small font-menu w3-right w3-hover-white" style="padding: 25px 16px">
-        Universities
+        class="navBarButton w3-button w3-hide-small font-menu  w3-right " style="padding: 25px 16px;">
+        <b>Universities</b>
       </div>
-      <div onclick="location.href='summaries.html';"
-        class="navBarButton w3-button w3-hide-small font-menu w3-right w3-hover-white" style="padding: 25px 16px">
-        Summaries
+      <div onclick="location.href='summaries.html';" class="navBarButton w3-button w3-hide-small font-menu  w3-right "
+        style="padding: 25px 16px;">
+        <b>Summaries</b>
       </div>
       <div onclick="location.href='forum.html';" href="#"
-        class="navBarButton w3-button w3-hide-small font-menu w3-right w3-hover-white" style="padding: 25px 16px">
-        Forum
+        class="navBarButton w3-button w3-hide-small font-menu w3-right " style="padding: 25px 16px;"><b>Forum</b>
       </div>
     </div>
-  </div>
-  </div>
-  </div>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="forum.html" class="w3-bar-item w3-button w3-padding-large" style="text-align: center">Forum</a>
-    <a href="summaries.html" class="w3-bar-item w3-button w3-padding-large" style="text-align: center">Summaries</a>
-    <a href="Universities.html" class="w3-bar-item w3-button w3-padding-large"
-      style="text-align: center">Universities</a>
-  </div>
   </div>
 
   <header class="w3-container setGray w3-center"
@@ -230,12 +212,6 @@
         <a href="#"><i class="bottomSocials fa fa-twitter w3-hover-opacity"></i></a>
         <a href="#"><i class="bottomSocials fa fa-linkedin w3-hover-opacity"></i></a>
       </div>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="./home.html">Home</a></li>
-        <li class="list-inline-item"><a href="./summaries.html">Summaries</a></li>
-        <li class="list-inline-item"><a href="./Universities.html">Universities</a></li>
-        <li class="list-inline-item"><a href="./forum.html">Forum</a></li>
-      </ul>
       <p class="copyright">The developers thank you for using UniForum</p>
     </footer>
   </div>
