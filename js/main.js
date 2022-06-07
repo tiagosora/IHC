@@ -32,7 +32,13 @@ async function login(element){
     isLogged = true
     localStorage.setItem("login", 1);
     loginAnime(element);
+}
 
+function tostaVerde(stringEntrada) {
+    var x = document.getElementById("snackbar");
+    x.innerHTML = '<i class="fa-solid fa-check"></i> '+stringEntrada;
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2000);
 }
 
 async function loginAnime(element){
@@ -46,7 +52,7 @@ async function loginAnime(element){
     element.innerText = "Sessão iniciada";
     await delay(1000);
     location.reload();
-
+    
 }
 
 function fav(element){
@@ -58,7 +64,9 @@ function fav(element){
             icon.className = "fa-regular fa-star fa-2xl"
         }else{
             icon.className = "fa-solid fa-star fa-2xl"
+            tostaVerde("Summary added to favourites!")
         }
+        
     }else{
         console.log("Not logged in");
         document.getElementById("modalPost").style.display = "block";
@@ -67,6 +75,7 @@ function fav(element){
 }
 
 globalThis.banana = new HTMLElement();
+
 function fav_sum(element){
     if(checkLogin() === true){
         if(element.className == "fa-solid fa-star fa-2xl"){
@@ -76,6 +85,7 @@ function fav_sum(element){
             document.getElementById("alert").style.display = "flex";
         }else{
             element.className = "fa-solid fa-star fa-2xl"
+            tostaVerde("Summary added to favourites!")
         }
     }else{fav_sum
         console.log("Not logged in");
@@ -155,6 +165,7 @@ function makeThePost(){
     var adicionar = `<div onclick="location.href='discussion.html';" class='discussion'><div class='disc-avatar'><img src='img/default.jpg' alt='user avatar' srcset=''>User</div><div class='disc-title'>${localStorage.getItem("postTitle")}</div><div class='disc-comments'><i class='fa-solid fa-comments'></i>0</div></div>`;
     var refreshForum = adicionar + forum;
     document.getElementById("forum-box").innerHTML = refreshForum;
+    tostaVerde("Post made sucessfully!");
 }
 
 function premiumContentDisc(){
