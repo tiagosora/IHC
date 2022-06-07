@@ -108,14 +108,8 @@ function makeThePost(){
 }
 
 function premiumContentDisc(){
-    if(checkLogin() == true){
         console.log("sucess");
         location.href='forum1.html';
-    }else{
-        console.log("Not logged in");
-        document.getElementById("modalPost").style.display = "block";
-        document.getElementById("alert").style.display = "flex";
-    }
 }
 
 function premiumContentCreatDisc(){
