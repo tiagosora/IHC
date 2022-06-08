@@ -208,6 +208,17 @@ function premiumContentCreatDisc(){
     }
 }
 
+function premiumContentCreatSum(){
+    if(checkLogin() == true){
+        console.log("sucess");
+        callModal();
+    }else{
+        console.log("Not logged in");
+        document.getElementById("modalPost").style.display = "block";
+        document.getElementById("alert").style.display = "flex";
+    }
+}
+
 function callModal(){
     document.getElementById("modalPost").style.display = "block";
     document.getElementById("publicar").style.display = "flex";
