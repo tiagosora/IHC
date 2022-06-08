@@ -63,18 +63,20 @@
       <button onclick="closeAlert()" data-toggle="modal" data-target="#myModal" class="post-button">Login</button>
     </div>
   </div>
+
   <div class="oModal" id="modalPost3">
     <div class="post" id="publicar">
       <div>
         <button onclick="closePost()" style="padding-top: 3px;">X</button>
       </div>
-      <h2 style="margin-top: 0px;">Starting a Discussion</h2>
+      <h2 style="margin-top: 0px;">Creating a Summary</h2>
       <div class="form-spacer" style="margin-bottom: 10px;">
         <i class="fa-brands fa-discourse"></i>
-        <input type="text" id="postTitle" class="input-field" placeholder="Discussion title">
+        <input type="text" id="postTitle" class="input-field" placeholder="Summary title">
       </div>
-      <textarea id="postContent" placeholder="Write your discussion" type="text" id="post-text"></textarea>
-      <button onclick="getInfosPost()" class="post-button">Post</button>
+      <textarea id="postContent" placeholder="Summary description" type="text" id="post-text"></textarea>
+      <input type="file" id="fileUploader" name="avatar" accept="pdf" style="padding-top: 10px;">
+      <button onclick="getInfosPost2()" class="post-button">Post</button>
     </div>
   </div>
 
@@ -87,6 +89,25 @@
     function closeAlert2() {
       document.getElementById("modalPost2").style.display = "none";
       document.getElementById("alert2").style.display = "none";
+    }
+    function closePost() {
+      document.getElementById("modalPost3").style.display = "none";
+      document.getElementById("publicar").style.display = "none";
+    }
+
+    var fileUploader = document.getElementById("fileUploader");
+    fileUploader.addEventListener('change', handleFileUpload, false);
+
+
+    function handleFileUpload(event) {
+      var file = event.target.files[0];
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        localStorage.setItem("content", e.target.result);
+      };
+
+      reader.readAsText(file, 'base64');
     }
   </script>
   <div class="modal-box">
@@ -202,7 +223,7 @@
       <div class="right-container" style="height: 100%;">
         <h2 class="titles" style="margin-left: 5px;" id="summaries_name"><i class="fa-solid fa-book-open"></i> SUMMARIES
         </h2>
-        <div class="summaries-box" style="padding: 5px;">
+        <div id="summaries-box" class="summaries-box" style="padding: 5px;">
 
 
           <div class="summarie">
