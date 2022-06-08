@@ -146,9 +146,9 @@
     float: right;
     outline: none;
     border: none;
-    background-color: rgb(40, 213, 40);
+    background-color: #618672;
     padding: 8px 15px;
-    color: rgb(3, 88, 3);
+    color: #fff;
     border-radius: 5px;
 }
 .comentar-box .send-comment button:hover{
