@@ -66,9 +66,10 @@ function fav(element){
     if(checkLogin() === true){
         console.log(isLogged);
         console.log(element);
-        var icon = element.children[0];
+        globalThis.icon = element.children[0];
         if(icon.className == "fa-solid fa-star fa-2xl"){
-            icon.className = "fa-regular fa-star fa-2xl"
+            document.getElementById("modalPost2").style.display = "block";
+            document.getElementById("alert2").style.display = "flex";
         }else{
             icon.className = "fa-solid fa-star fa-2xl"
             tostaVerde("Summary added to favourites!")
@@ -81,13 +82,27 @@ function fav(element){
     }
 }
 
+async function StarBlank(){
+    var back_up = document.getElementById("ok_remove").innerHTML;
+    icon.className = "fa-regular fa-star fa-2xl"
+    document.getElementById("ok_remove").innerHTML = "Removing";
+    for(let i = 0; i < 3; i++){
+
+        await delay(400);
+        document.getElementById("ok_remove").innerHTML+=". ";
+    }
+    await delay(500);
+    document.getElementById("modalPost2").style.display = "none";
+    document.getElementById("alert2").style.display = "none";
+    document.getElementById("ok_remove").innerHTML = back_up;
+}
+
 globalThis.banana = new HTMLElement();
 
 function fav_sum(element){
     if(checkLogin() === true){
         if(element.className == "fa-solid fa-star fa-2xl"){
             banana = element;
-            console.log(banana)
             document.getElementById("modalPost").style.display = "block";
             document.getElementById("alert").style.display = "flex";
         }else{
@@ -112,7 +127,7 @@ function remove_this_banana(){
 async function Wanna_remove_banana(){
 
     var back_up = document.getElementById("ok_remove").innerHTML;
-    document.getElementById("ok_remove").innerHTML = "Erasing";
+    document.getElementById("ok_remove").innerHTML = "Removing";
     for(let i = 0; i < 3; i++){
 
         await delay(400);
@@ -130,7 +145,7 @@ async function Wanna_remove_banana(){
 async function Wanna_remove(){
 
     var back_up = document.getElementById("ok_remove").innerHTML;
-    document.getElementById("ok_remove").innerHTML = "Erasing";
+    document.getElementById("ok_remove").innerHTML = "Removing";
     for(let i = 0; i < 3; i++){
 
         await delay(400);
@@ -142,7 +157,7 @@ async function Wanna_remove(){
     document.getElementById("ok_remove").innerHTML = back_up;
     if (toErase != ""){
         toErase.remove();
-        tostaVermelha("Summary removed from favourites!")
+        tostaVermelha("Summary removed!")
     }
 }
 
@@ -385,14 +400,14 @@ function universitiesUpdate(){
 function Change_Liked_Created_Sums(){
     if (document.getElementById('switchy').checked){
       document.body.classList.add('active');
-      document.getElementById("summaries_name").innerHTML = `<i class="fa-solid fa-book-open"></i> Posted Sums`
+      document.getElementById("summaries_name").innerHTML = `<i class="fa-solid fa-book-open"></i> Posted Sumaries`
       var elements = document.getElementsByClassName("titalo")
       for (var i = 0, len = 5; i < len; i++) {
         elements[i].parentElement.parentElement.style.display = "none";
     }
     }else{
       document.body.classList.remove('active');
-      document.getElementById("summaries_name").innerHTML = `<i class="fa-solid fa-book-open"></i> Liked Sums`
+      document.getElementById("summaries_name").innerHTML = `<i class="fa-solid fa-book-open"></i> Liked Sumaries`
       var elements = document.getElementsByClassName("titalo")
       for (var i = 0, len = 5; i < len; i++) {
         elements[i].parentElement.parentElement.style.display = "flex";
