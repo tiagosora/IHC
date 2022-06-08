@@ -40,6 +40,13 @@ function tostaVerde(stringEntrada) {
     x.className = "show";
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2000);
 }
+function tostaVermelha(stringEntrada) {
+    var x = document.getElementById("snackbarRed");
+    x.innerHTML = '<i class="fa-solid fa-x"></i> '+stringEntrada;
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2000);
+}
+
 
 async function loginAnime(element){
     element.innerText = "Entring ";
@@ -98,6 +105,7 @@ function remove_this_banana(){
     if (banana != null) {
         banana.className = "fa-regular fa-star fa-2xl"
         banana = null;
+        tostaVermelha("Summary removed from favourites!")
     }
 }
 
@@ -134,6 +142,7 @@ async function Wanna_remove(){
     document.getElementById("ok_remove").innerHTML = back_up;
     if (toErase != ""){
         toErase.remove();
+        tostaVermelha("Summary removed from favourites!")
     }
 }
 
