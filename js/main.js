@@ -100,6 +100,7 @@ async function StarBlank() {
   document.getElementById("modalPost2").style.display = "none";
   document.getElementById("alert2").style.display = "none";
   document.getElementById("ok_remove").innerHTML = back_up;
+  tostaVermelha("Summary removed from favourites!");
 }
 
 globalThis.banana = new HTMLElement();
