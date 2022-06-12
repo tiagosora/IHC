@@ -48,6 +48,8 @@ function changeNav() {
   document.getElementById("nav-login").firstChild.style.flex = "100%";
   document.getElementById("nav-login").appendChild(div);
   console.log(tag)
+
+  tag.setAttribute("onclick", "clearAll()");
   div.style.fontSize = "15px !important"
 
   tag.style.fontSize = "15px !important"
@@ -60,12 +62,16 @@ function changeNav() {
 function dropDown(element) {
   //document.getElementById("nav-login").classList.toggle("show");
   if(element.style.display == "none"){
-    console.log(element)
     element.style.display = "flex";
   }else{
     element.style.display = "none";
   }
 
+}
+
+function clearAll(){
+  localStorage.clear();
+  window.location="home.html";
 }
 
 
@@ -77,6 +83,30 @@ function checkLogin() {
     console.log("Nao logado");
     return false;
   }
+}
+
+function callPerfil(){
+  callModal3();
+  console.log("oio")
+}
+
+function callModal3() {
+  document.getElementById("modalPost").style.display = "block";
+  document.getElementById("perfil").style.display = "block";
+}
+
+function cancelPerfil(){
+  document.getElementById("modalPost").style.display = "none";
+  document.getElementById("perfil").style.display = "none";
+}
+
+function savePerfil(){
+  var newName = document.getElementById("nome").value;
+  if(newName != ""){
+    document.getElementById("nomeBold").innerText = newName;
+    document.getElementById("nomePerfil").innerText = newName;
+  }
+  cancelPerfil();
 }
 
 function delay(time) {

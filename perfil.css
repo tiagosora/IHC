@@ -1,0 +1,110 @@
+#perfil{
+    width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 40px;
+    display: none;
+}
+
+#perfil h3,h4{
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.foto-perfil{
+    width: fit-content;
+}
+
+.foto-perfil img{
+    max-width: 150px;
+    object-fit: cover;
+}
+
+.nome-perfil{
+    width: 100%;
+    background-color: rgb(253, 219, 116);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.nome-perfil h4{
+    margin-top: 0;
+}
+
+.nome-perfil input{
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.nome-perfil i{
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 13px;
+    color: rgb(76, 76, 76);
+}
+
+.social-perfil{
+    width: 100%;
+    background-color: rgb(116, 207, 253);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.social-perfil h4{
+    margin-top: 0;
+}
+
+.social-holder{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.social-holder input{
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    max-width: 90%;
+}
+
+.social-holder i{
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 13px;
+    color: rgb(76, 76, 76);
+}
+
+.button-perfil{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 20% 20%;
+    grid-template-areas:
+    "a a a b d";
+    align-content: end;
+}
+
+.button-perfil button:nth-child(1){
+    background-color: rgb(114, 187, 83);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.button-perfil button:nth-child(2){
+    background-color: rgb(187, 83, 83);
+    border-radius: 5px;
+    font-size: 15px;
+}

@@ -36,50 +36,48 @@
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="mainStyles.css" />
+  <link rel="stylesheet" href="perfil.css">
 </head>
 
 <body>
   <div class="oModal" id="modalPost">
-    <div class="alert" id="alert">
-      <h2>Atention</h2>
-      <h4>Do you want to remove this summary from your favourites?</h4>
-      <div style="display: flex; flex-direction:row;">
-        <button onclick="closeAlert()" class="post-button" style="flex: 40%;margin: 5px;">Cancel</button>
-        <button onclick="Wanna_remove()" class="post-button" id="ok_remove" style="flex: 40%;margin: 5px;">Ok</button>
+    <div id="perfil">
+      <h3>Hi! <b id="nomeBold">John Doe</b></h3>
+      <div class="foto-perfil">
+        <h4>Your profile picture</h4>
+        <img src="img/default.jpg" alt="foto do perfil">
       </div>
-    </div>
-  </div>
-  <div class="modal-box">
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document" style="margin: 20vh auto;">
-        <div class="modal-content clearfix">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-            style="background: #e8d1a9;font-weight: bold;height: 35px; width: 35px;">X</button>
-          <div class="modal-body">
-            <h3 class="title" style="color: #e8d1a9;font-weight: bold;">Login In</h3>
-            <p class="description">Sign in to access your acount</p>
-            <div class="form-group">
-              <span class="input-icon"><i class="fa fa-envelope"></i></span>
-              <input type="email" class="form-control" placeholder="Email Account">
-            </div>
-            <div class="form-group">
-              <span class="input-icon"><i class="fas fa-lock"></i></span>
-              <input type="password" class="form-control" placeholder="Password">
-            </div>
-            <div>
-              <div class="form-group checkbox w3-left">
-                <input type="checkbox" class="double" style="margin: 0px; background-color: #2B475C; "><label
-                  style="color: #2B475C;">Remember me</label>
-              </div>
-              <div class="w3-right">
-                <a href="" class="forgot-pass" style=" width: fit-content;  color: #2B475C;">Forgot Password?</a>
-              </div>
-            </div>
-            <a href="#" class="forgot-pass" style="color: #2B475C;">Haven't become a member yet?</a>
-            <button class="btn" onclick="login(this)"
-              style=" margin-top: 15px; background: #e8d1a9;font-weight: bold;">Login</button>
+      <div class="nome-perfil">
+        <h4>Change your displaying name</h4>
+        <div class="nome-perfil-holder">
+          <i class="fa-solid fa-user-pen"></i>
+          <input type="text" placeholder="Username" id="nome">
+        </div>
+      </div>
+      <div class="social-perfil">
+        <h4>Your socials</h4>
+        <div class="social-holder">
+          <div class="nome-perfil-holder">
+            <i class="fa-brands fa-twitter-square"></i>
+            <input type="text" placeholder="your @ on twitter">
+          </div>
+          <div class="nome-perfil-holder">
+            <i class="fa-brands fa-linkedin"></i>
+            <input type="text" placeholder="your linkedin ID">
+          </div>
+          <div class="nome-perfil-holder">
+            <i class="fa-brands fa-facebook-square"></i>
+            <input type="text" placeholder="your facebook ID">
+          </div>
+          <div class="nome-perfil-holder">
+            <i class="fa-brands fa-instagram-square"></i>
+            <input type="text" placeholder="your instagram user">
           </div>
         </div>
+      </div>
+      <div class="button-perfil">
+        <button style="grid-area: b;" onclick="savePerfil()">Save</button>
+        <button style="grid-area: d;" onclick="cancelPerfil()">Cancel</button>
       </div>
     </div>
   </div>
@@ -125,7 +123,7 @@
         <div style="display: flex; flex-direction:row; width: 100%;margin: 0 auto; margin-top: 100px ;">
           <div class="card" style="flex: 50%;">
             <img src="img/avatar1.jpg" alt="John" style="width: 100%" />
-            <h1>John Doe</h1>
+            <h1 id="nomePerfil">John Doe</h1>
             <style>
               a {
                 text-decoration: none;
@@ -146,6 +144,7 @@
               <a href="#"><i class="fa fa-linkedin" style="padding: 0px 5px;"></i></a>
               <a href="#"><i class="fa fa-facebook" style="padding: 0px 5px;"></i></a>
             </div>
+            <button class="animacao titles" onclick="callPerfil()" style="max-width: 80%; margin: 0 auto; margin-bottom: 10px;font-size: 16px;"><i class="fa-solid fa-gear"></i> EDIT YOUR PROFILE</button>
             <!-- <p><button><b>Contact</b></button></p> -->
           </div>
           <style>
