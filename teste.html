@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> UniForum </title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="mainStyles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/272ebe4f5a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="modal-box">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document" style="margin: 20vh auto;">
+        <div class="modal-content clearfix">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+            style="background: #e8d1a9;font-weight: bold;height: 35px; width: 35px;">X</button>
+          <div class="modal-body">
+            <h3 class="title" style="color: #e8d1a9;font-weight: bold;">Login In</h3>
+            <p class="description">Sign in to access your acount</p>
+            <div class="form-group">
+              <span class="input-icon"><i class="fa fa-envelope"></i></span>
+              <input type="email" class="form-control" placeholder="Email Account">
+            </div>
+            <div class="form-group">
+              <span class="input-icon"><i class="fas fa-lock"></i></span>
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div>
+              <div class="form-group checkbox w3-left">
+                <input type="checkbox" class="double" style="margin: 0px; background-color: #2B475C; "><label
+                  style="color: #2B475C;">Remember me</label>
+              </div>
+              <div class="w3-right">
+                <a href="" class="forgot-pass" style=" width: fit-content;  color: #2B475C;">Forgot Password?</a>
+              </div>
+            </div>
+            <a href="#" class="forgot-pass" style="color: #2B475C;">Haven't become a member yet?</a>
+            <button class="btn" onclick="login(this)"
+              style=" margin-top: 15px; background: #e8d1a9;font-weight: bold;">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+
+  <!-- Navbar -->
+  <div class=" w3-top textColor1 fixed-top" id="main-nav-bar">
+    <div class=" w3-bar setGray w3-card w3-left-align" style="height: 80px;">
+      <div onclick="location.href='home.html';" class="navBarButton w3-bar-item  w3-small w3-large"
+        style="padding: 0; margin-left: 40px; cursor:  pointer;">
+        <div class="navBarButton w3-bar-item  w3-small w3-large maxSize" style="padding: 0;">
+          <img class="maxSize" src="logoCircleImage.png" alt="Logo">
+        </div>
+        <div class="navBarButton w3-button w3-small w3-large " style="margin-right: 40px; padding: 25px 16px;">
+          <b>UniForum</b>
+        </div>
+      </div>
+      <div class="navBarButton w3-button w3-hide-small font-menu  w3-right "
+        style="margin-right: 40px; padding: 25px 16px;" data-toggle="modal" data-target="#myModal" id="nav-login">
+        <b>Login</b>
+      </div>
+      <div onclick="location.href='Universities.html';"
+        class="navBarButton w3-button w3-hide-small font-menu  w3-right " style="padding: 25px 16px;">
+        <b>Universities</b>
+      </div>
+      <div onclick="location.href='summaries.html';" class="navBarButton w3-button w3-hide-small font-menu  w3-right "
+        style="padding: 25px 16px;">
+        <b>Summaries</b>
+      </div>
+      <div onclick="location.href='forum.html';" href="#"
+        class="navBarButton w3-button w3-hide-small font-menu w3-right " style="padding: 25px 16px;"><b>Forum</b>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/main.js"></script>
+
+
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

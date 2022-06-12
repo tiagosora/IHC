@@ -9,15 +9,65 @@ if (parseInt(localStorage.getItem("login")) === 1) {
 
 function changeNav() {
   document.getElementById("nav-login").removeAttribute("data-target");
-  document
-    .getElementById("nav-login")
-    .setAttribute("onclick", "location.href='perfil.html';");
+  //document.getElementById("nav-login").setAttribute("onclick", "location.href='perfil.html';");  
   document.getElementById("nav-login").innerHTML =
     '<i class="fa-solid fa-circle-user" style="font-size: 30px;"></i>';
-  document
+
+  //PERFIL TAG
+  var div = document.createElement("div");
+  var tag0 = document.createElement("a");
+  var text0 = document.createTextNode("Perfil");
+  tag0.appendChild(text0);
+  tag0.style.padding = "3px 10px";
+  div.appendChild(tag0);
+  
+  //LOGOUT TAG
+  var tag = document.createElement("a");
+  var text = document.createTextNode("log out");
+  tag.appendChild(text);
+  tag.style.padding = "3px 10px";
+  div.appendChild(tag);
+
+  tag0.setAttribute("onclick", "location.href='perfil.html'");
+
+
+
+  div.style.backgroundColor = "white";
+  div.style.borderRadius = "5px";
+  div.style.display = "none";
+  div.style.position = "absolute";
+  div.style.marginTop = "100px";
+  div.style.marginLeft = "-36px";
+  div.style.flexDirection = "column"
+  div.style.textAlign = "center";
+  div.style.minWidth = "110px";
+  div.style.boxShadow = "0px 2px 0px 1px #00000020";
+  document.getElementById("nav-login").setAttribute("onclick", "dropDown(this.lastChild)");
+  document.getElementById("nav-login").style.display = "flex";
+  document.getElementById("nav-login").style.flexDirection  = "column";
+  document.getElementById("nav-login").firstChild.style.flex = "100%";
+  document.getElementById("nav-login").appendChild(div);
+  console.log(tag)
+  div.style.fontSize = "15px !important"
+
+  tag.style.fontSize = "15px !important"
+  tag0.style.fontSize = "15px !important"
+ /* document
     .getElementById("nav-login")
-    .setAttribute("onclick", "window.location = 'perfil.html'");
+    .setAttribute("onclick", "window.location = 'perfil.html'");*/
 }
+
+function dropDown(element) {
+  //document.getElementById("nav-login").classList.toggle("show");
+  if(element.style.display == "none"){
+    console.log(element)
+    element.style.display = "flex";
+  }else{
+    element.style.display = "none";
+  }
+
+}
+
 
 function checkLogin() {
   if (parseInt(localStorage.getItem("login")) === 1) {
