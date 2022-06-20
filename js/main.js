@@ -23,7 +23,7 @@ function changeNav() {
   
   //LOGOUT TAG
   var tag = document.createElement("a");
-  var text = document.createTextNode("log out");
+  var text = document.createTextNode("Log out");
   tag.appendChild(text);
   tag.style.padding = "3px 10px";
   div.appendChild(tag);
